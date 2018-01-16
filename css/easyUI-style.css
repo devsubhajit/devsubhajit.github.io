@@ -1,0 +1,145 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Nov 5, 2015, 12:01:52 PM
+    Author     : Administrator
+*/
+/*======================================
+------------------font -----------------
+========================================*/
+/* ========== font declaration in this theme 
+Regular = HelveticaNeueRegular
+Light   = HelveticaNeueLight
+Medium  = HelveticaNeueMedium
+Bold    = HelveticaNeueBold
+*/ 
+@font-face {
+    font-family: 'Regular';
+    src: url('fonts/helveticaneue.eot');
+    src: url('fonts/helveticaneue.eot') format('embedded-opentype'), url('fonts/helveticaneue.woff') format('woff'), url('fonts/helveticaneue.ttf') format('truetype'), url('fonts/helveticaneue.svg#HelveticaNeueRegular') format('svg');
+    font-weight: normal; font-style: normal; }
+@font-face {
+    font-family: 'Light';
+    src: url('fonts/helveticaneue-light.eot');
+    src: url('fonts/helveticaneue-light.eot') format('embedded-opentype'), url('fonts/helveticaneue-light.woff') format('woff'), url('fonts/helveticaneue-light.ttf') format('truetype'), url('fonts/helveticaneue-light.svg#HelveticaNeueLight') format('svg');
+    font-weight: normal; font-style: normal; }
+@font-face {
+    font-family: 'Medium';
+    src: url('fonts/helvetica-neue-medium.eot');
+    src: url('fonts/helvetica-neue-medium.eot') format('embedded-opentype'), url('fonts/helvetica-neue-medium.woff') format('woff'), url('fonts/helvetica-neue-medium.ttf') format('truetype'), url('fonts/helvetica-neue-medium.svg#HelveticaNeueMedium') format('svg');
+    font-weight: normal; font-style: normal; }
+@font-face {
+    font-family: 'Bold';
+    src: url('fonts/helvetica-neue-bold.eot');
+    src: url('fonts/helvetica-neue-bold.eot') format('embedded-opentype'), url('fonts/helvetica-neue-bold.woff') format('woff'), url('fonts/helvetica-neue-bold.ttf') format('truetype'), url('fonts/helvetica-neue-bold.svg#HelveticaNeueBold') format('svg');
+    font-weight: normal; font-style: normal; }
+/* ======================= Global Attributes =========================== */
+* {margin:0px; padding:0px;}
+html,body {width: 100%; height: 100%; font-family: 'Regular';}
+.vh-middle {top:0px; left: 0px; right: 0px; bottom: 0px; margin: auto;}
+.easyUI-animation {transition: all 0.6s ease; -moz-transition: all 0.6s ease; -webkit-transition: all 0.6s ease; -ms-transition: all 0.6s ease;}
+.fleft {display: inline-block;}
+a {text-decoration: none; color: inherit;}
+/* ============ header =========== */
+.easyui-title {color: #999999; padding: 40px 20px;}
+.easyui-title h1{font-size: 24px; font-weight: normal; }
+
+/* ============= */
+.easyui-wrapper {width:100%; height: 100%; position: relative;}
+.easyui-logo {width: 40px; height: 40px; position: absolute; border-radius: 40px; background-color:  #ff3333; border: 4px solid #cf3333;}
+.easyui-navigation {width: 340px; height: 25px; position: absolute; top:60px; left:-150px; list-style: none; opacity:0;}
+.easyui-navigation li {width:auto; padding:2px 8px; margin: 1px 2px; display: inline-block; color: #fff; background-color: #000; font-size: 14px; letter-spacing: 2px; position: relative;}
+.easyui-navigation li a {text-decoration: none; color:inherit;}
+.easyui-navigation li ul {position: absolute; top:22px; left: 0px; height: 0px; display: none;}
+.easyui-navigation li ul li {display: block; width: 180%; margin: 0px; border-top:1px solid #fff;}
+
+/* ============ side object ui =========== */
+.easyui-sideview {width: 40%; height: 100%; background-color: rgba(0,0,0,1); position: fixed; left: 100%; top: 0px;
+                  transition: background 0.4s ease; -moz-transition: background 0.4s ease; -ms-transition: background 0.4s ease; -webkit-transition: background 0.4s ease;
+}
+.easyui-sideview .headerPart {width: 100%; height: auto; background-color: rgba(255,51,51,1); opacity: 0; padding-bottom: 20px;
+                              transition: all 0.4s ease; -moz-transition: all 0.4s ease; -ms-transition: all 0.4s ease; -webkit-transition: all 0.4s ease;
+}
+.headerPart h1 {text-align: left; padding-left: 40px; font-size: 24px; color: #fff; line-height: 50px; font-family: 'Regular';}
+.headerPart p {text-align: left; padding:0px 40px; font-size: 14px; color: rgba(255,255,255,0.7); line-height: 15px; font-family: 'Regular';}
+.aboutClose {width: 50px; height: 50px; position: absolute; bottom: -50px; left: -50px; background-color: rgba(255,51,51,1); color: #fff; font-size: 40px; text-align: center; line-height: 50px;
+            transition:all 0.4s ease; -moz-transition:all 0.4s ease; -webkit-transition:all 0.4s ease; -ms-transition:all 0.4s ease; 
+}
+/* ================ effect layout ============= */
+.easyui-puller-effect {width: 0px; height: 0px; position: absolute; border-radius: 100px; background-color: rgba(255,51,51,1);}
+
+/* =================================
+ ------ default product page -------
+ ===================================*/
+.easyui-side-product-switch {width:70px; height: 40px; position: fixed; top: 40px; left: 40px; border:1px solid #999999; line-height: 40px; text-align: center; color: #999999; font-size: 14px; cursor: pointer;}
+.easyui-side-product-switch:hover {color:#fff; background-color: #999999;}
+.easyui-productLogo {width: 60px; height: 60px; background-color: rgba(0,180,59,0.6); margin: auto; border-radius: 60px;}
+.easyui-allProduct {width: 40px; height: 40px; background-color: rgba(0,0,0,0.7); bottom: auto; top:10px; position: absolute; left: 102px; border-radius: 40px;}
+
+.easyui-prodcutDetails {width: 100%; height: auto; margin: 20px auto 0px; padding: 20px 0px; background-color: rgba(255,255,255,0.8);}
+.easyui-productViewBox {width:500px; height: 250px; margin: auto; position: relative; overflow: visible;}
+.viewport-product {width: inherit; height: inherit; overflow: visible;}
+.easyui-editview {list-style: none; width: 100%; margin-top: 20px;}
+.easyui-editview li {display: inline-block; height: 20px; width: auto; color: rgba(0,0,0,0.7);}
+
+.edit-box {width: 100%; margin-bottom: 50px;}
+.edit-row {width: 100%; }
+.edit-column input {width: 100%; }
+.edit-row label { padding: 6px 6px 0px; display: inline-block; font-size: 14px; color: rgba(0,0,0,0.6);}
+
+.html-box {width: 100%; position: absolute; overflow: hidden; background-color: rgba(255,255,255,0.9); color: #999999; font-size: 14px; bottom:0px;}
+#graphSubmit {border: 0px solid #000; margin-top:15px; background-color:rgba(0,200,90,1); padding: 10px; color:#fff; font-size: 16px; cursor: pointer;}
+.colorPalet {width: 20px; height: 15px; border:0px solid #000;}
+#borderWidth { width: 30px; height: 20px;}
+.input-pop {display:none;  background: #fff none repeat scroll 0 0;border: 2px solid rgba(0, 0, 0, 0.2);border-radius: 8px;height: 22px;padding: 6px;position: absolute;width: 60px;}
+.bnumber {width: 30px; height: 16px;}
+
+.popup-Message {position: fixed; top: 0px; left: 0px; width: 100%; height: 100%; background-color: rgba(0,0,0,0.4); display: none;}
+.popup-Message-content {width: 400px; height: 300px; background-color: #fff; position: absolute;}
+.popup-Message-content {width: 100%; height: 250px; background-color: #fff; position: absolute; padding: 20px 0px;}
+.popup-Message-content p {width: 400px; margin: auto; font-size: 14px; color:rgba(0,0,0,0.6);}
+.okay{position: absolute; top: auto; bottom: 10px; width: 80px; height: 30px; border: 1px solid #cccccc; line-height: 30px; color:rgba(0,0,0,0.6); text-align: center; cursor: pointer;}
+.okay:hover{border: 1px solid #fff; color: #fff; background-color: rgba(0,0,0,0.6);}
+
+.easyui-button {padding: 2px 8px; width: auto; height: auto; border: 1px solid #cccccc; cursor: pointer; color:rgba(0,0,0,0.6);}
+.easyui-button:hover{border: 1px solid #fff; color: #fff; background-color: rgba(0,0,0,0.6);}
+.easyui-button.active{border: 1px solid #fff; color: #fff; background-color: rgba(0,0,0,0.6);}
+
+
+
+/* ------------------ about product ------------------- */
+.easyui-product-about-switch {cursor:pointer; width: 30px; height: 30px; color: #999; font-weight: bold; transform: rotate(90deg); font-size: 22px; line-height: 24px; position: fixed; top:40px; right: 40px;}
+.about-product-info {background-color: rgba(255,255,255,1); width: 280px; padding: 0px 10px; height: 100%; position: fixed; top:80px; right: -502px; color:#aaa;}
+.about-product-info h1 {font-size: 20px; font-weight: normal; color:#999; padding: 10px 0px;}
+.about-product-info p {font-size: 14px; font-weight: normal;}
+.about-product-info ul { text-align: left; font-size: 14px; margin-left: 20px;}
+.about-product-info .author {width: 200px; height: 300px; position: absolute; top:0px; left: -202px; background-color: rgba(255,255,255,1);}
+.about-product-info .author .picture{width: 190px; height: 190px; margin:5px; overflow: hidden;}
+.about-product-info .author .picture img{width: 100%; height: auto; }
+.about-product-info .author h1 {text-indent: 5px; font-weight: normal; color:#888; font-size: 16px;}
+.about-product-info .author p {text-indent: 5px; }
+
+
+/* --------- product list ------------- */
+.allui-product {position: fixed; top:100px; left: -200px; width: 200px; height: auto; padding: 10px 0px; background-color: rgba(255,255,255,1); list-style: none; }
+.allui-product li{ height: 20px; line-height: 20px; font-size: 14px; color: #aaa; margin-left: 30px; border-bottom: 1px solid rgba(0,0,0,0.04);}
+
+.allui-product li span {width: 4px; height: 10px; background-color:rgba(0,0,0,0.04); margin-right: 12px; display: block; float: left; margin-top: 5px;}
+.allui-product li:hover span {width: 4px; height: 14px; background-color:rgba(0,180,59,0.4);}
+.allui-product li:hover {border-bottom:1px solid rgba(0,180,59,0.4);}
+/* ============= */
+#myCanvas {position: fixed; top:0px; left: 0px;}
+#container {background: transparent; position: fixed;left: 50%;top: 50%; overflow: hidden;}
+
+/* -------- carousal page -------- */
+.edit-option {position: fixed; width: 400px; bottom: 20px; left:0px; right: 0px; margin: auto; height: 100px;}
+.edit-option ul {list-style: none;}
+.edit-option ul li {display: inline-block; padding: 2px 8px; margin: 2px 5px; color: #ababab; background-color: rgba(0,0,0,0.02); font-size: 14px; position: relative;}
+.edit-option ul li label {margin-left:5px;}
+
+.carousel-instruction {width: 300px; height: 100px; background-color: rgba(255,255,255,0.6); padding: 10px; color: rgba(0,0,0,0.4); font-size: 14px; position: absolute; top:10px; }
+#doneCarousel {width: 60px; height: 40px; background-color: rgba(0,180,60,0.8); position: absolute; left: 0px; bottom: 0px; border: 0px; color:#fff; font-size: 14px;}
+#htmlCarousel {width: 60px; height: 40px; background-color: rgba(0,0,0,0.8); position: absolute; left: 62px; bottom: 0px; border: 0px; color:#fff; font-size: 14px; text-decoration: none; line-height:40px; text-align: center;}
