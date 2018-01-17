@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+
+<head>
+    <title>SVG Charts</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/easyUI-style.css" rel="stylesheet" type="text/css" />
+    <link href="css/easyui-anaimate.css" rel="stylesheet" type="text/css" />
+    <!-- <script src="../js/easyUI-effects.js" type="text/javascript"></script> -->
+    <link href="css/chart-style.css" rel="stylesheet" type="text/css" />
+    <!-- <script src="../js/easyUI-js.js" type="text/javascript"></script> -->
+</head>
+
+<body data-effect="bubble" data-page="product">
+    <!-- <canvas id="myCanvas" data-theme="0,180,59"></canvas> -->
+    <div class="easyui-wrapper">
+        <!-- <header>
+                <div class="easyui-productLogo vh-middle">
+                </div> 
+            </header> -->
+        <div class="easyui-prodcutDetails ">
+            <div class="easyui-productViewBox">
+                <div class="viewport-product" data-graph="line">
+                    <a>click on edit to draw new line graph</a>
+                    <span id="maxValue" class="ui-max-value">1000</span>
+                    <span id="allValues" class="ui-graph-values">100 200 500 200 600 200 400 200 600 800 200 600 100</span>
+                </div>
+                <ul class="easyui-editview">
+                    <li id="editOpen" class="easyui-button">edit</li>
+                    <li id="openhtml" class="easyui-button">html</li>
+                    <li class="easyui-button">
+                        <a href="javascript:void(0)">download</a>
+                    </li>
+
+                </ul>
+                <div id="editBox" class="edit-box" style="height: 0px; overflow: hidden;">
+                    <form>
+                        <div class="edit-row">
+                            <div class="edit-column fleft" style="width: 30%;">
+                                <label for="maximum-value">Maximum Value</label>
+                                <br />
+                                <input id="maximum-value" type="text" />
+                            </div>
+                            <div class="edit-column fleft" style="width: 60%;">
+                                <label for="all-values">All values</label>
+                                <br />
+                                <input id="all-values" type="text" />
+                            </div>
+                        </div>
+                        <div class="edit-row all-checks">
+                            <label for="chart-background">
+                                <input type="color" id="chart-background" class="allCheck colorPalet"> Background</label>
+                            <label for="chart-grid">
+                                <input type="color" id="chart-grid" class="allCheck colorPalet"> Grid Color</label>
+                            <label for="line-color">
+                                <input type="color" id="line-color" data-stylevalue="color" class="allCheck colorPalet"> Line Color</label>
+                            <label for="mode">
+                                <input type="checkbox" id="mode" data-stylevalue="mode:fill" class="allCheck"> Fill</label>
+                            <label for="gradient">
+                                <input type="checkbox" id="gradient" data-stylevalue="gradient:positive" class="allCheck"> Gradient</label>
+                            <!-- need to open two color range -->
+                            <label for="grade-color1">
+                                <input type="color" id="grade-color1" class="allCheck colorPalet"> Gradient Color from</label>
+                            <label for="grade-color2">
+                                <input type="color" id="grade-color2" class="allCheck colorPalet"> Gradient Color to</label>
+
+                            <label for="dots">
+                                <input type="checkbox" id="dots" data-stylevalue="dots:true" class="allCheck"> Dots</label>
+                            <label for="dot-color">
+                                <input type="color" id="dot-color" data-stylevalue="dotstyle" value="#000000" class="allCheck colorPalet"> Dot Color</label>
+                            <!-- need to open two inputs border and color -->
+                            <label for="dot-border">
+                                <input type="number" id="dot-border" class="bnumber"> Dot Border</label>
+                            <label for="dot-border-color">
+                                <input type="color" id="dot-border-color" value="#000000" class="allCheck colorPalet"> Dot Border Color</label>
+                            <label for="curved">
+                                <input type="checkbox" id="curved" data-stylevalue="corner:curved" class="allCheck"> Curved Corner</label>
+                        </div>
+                        <div class="edit-row">
+                            <input type="button" value="submit" id="graphSubmit" />
+                        </div>
+                    </form>
+                </div>
+                <div style="font-size:14px; color:rgba(0,0,0,0.6);">
+                    <i> hints**::click on edit and add values with space, like this
+                        <br>
+                        <strong>124 212 156 458 325</strong>
+                    </i>
+                    <br>
+                    <br>
+                    <p>After submitting your values and other properties you will find the html code to use inside your project <br><strong>OR</strong><br>
+                    you will get to know how to add properties.
+                    </p>
+                </div>
+                <div id="htmlbox" class="html-box" style=" height: 0px;">
+                    first edit something and submit :)
+                </div>
+            </div>
+        </div>
+        <div id="popMessage" class="popup-Message">
+            <div id="popmsgcont" class="popup-Message-content vh-middle">
+                <div id="okay" class="vh-middle okay">OK</div>
+            </div>
+        </div>
+    </div>
+    <!-- side products menu and about menu -->
+    <div id="blackOverlay" class="easyui-overlay easyui-commonAnimate"></div>
+    <!-- <div id="alui" class="easyui-side-product-switch easyui-commonTrans">All UI</div> -->
+    <div class="easyui-product-about-switch">||||</div>
+    <!--- graph script --->
+    <!-- about box -->
+    <div class="about-product-info easyui-commonTrans">
+        <h1>About line graph</h1>
+        <p>
+            It is really very hard for a HTML coder like me to edit a line chart from a downloaded library. I had tried many but was
+            not good enough for me. So I have created this line graph/chart. Its very easy to use for all HTML coder.
+            <br/>
+            <br/>
+        </p>
+        <ul>
+            <li> You can change the line color</li>
+            <li> You can also change the background and grid colors</li>
+            <li> you can set the fill colors</li>
+            <li> you can set the fill colors also with multiple gradients</li>
+            <li> you can curve the line (I never found a curved line graph)</li>
+            <li> you can take decision whether your graph will have the dots or not</li>
+            <li> responsive</li>
+            <li> Being an Animator I find animation everywhere and try to put it</li>
+            <li> no need of external libraries</li>
+            <li> Less Coding</li>
+        </ul>
+        <div class="author">
+            <h1>About author</h1>
+            <div class="picture">
+                <img src="../image/me4.jpg" alt="" />
+            </div>
+            <p><a href="https://devsubhajit.github.io/">Subhajit Das</a></p>
+            <p>
+                <i>Animator, UI Developer</i>
+            </p>
+        </div>
+    </div>
+    <!-- ui list -->
+    <ul id="uilist" class="allui-product easyui-commonTrans">
+        <li>
+            <span></span>
+            <a href="../svgChart/index.html">SVG graphs</a>
+        </li>
+        <li>
+            <span></span>
+            <a href="../carosal/index.html">Easy Slider</a>
+        </li>
+    </ul>
+    <script src="js/svgchart.full.library.v.1.js" type="text/javascript"></script>
+    <script>
+        window.onload = function () {
+            var aboutProduct = document.getElementsByClassName('easyui-product-about-switch')[0];
+            var overlayBlack = document.getElementById('blackOverlay');
+            var allUi = document.getElementById('alui');
+            aboutProduct.onclick = function () {
+                if (this.innerHTML === '||||') {
+                    this.innerHTML = 'X';
+                    this.style.color = '#fff';
+                    this.style.transform = 'rotate(0deg)';
+                    overlayBlack.style.display = 'block';
+                    document.getElementsByClassName('about-product-info')[0].style.right = 0 + 'px';
+                } else if (this.innerHTML === 'X') {
+                    this.innerHTML = '||||';
+                    this.removeAttribute('style');
+                    overlayBlack.style.display = 'none';
+                    document.getElementsByClassName('about-product-info')[0].style.right = -502 + 'px';
+                }
+            };
+        };
+    </script>
+</body>
+
+</html>
