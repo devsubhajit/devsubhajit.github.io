@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <title>scroll bar</title>
+    <link href="css/scrollbar.css" rel="stylesheet" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="js/touchSupport.js"></script>
+</head>
+
+<body>
+    <div class="containers">
+        <div class="scrollContainer">
+            <ul>
+                <li>
+                    <h2>Shivnath Patel</h2>
+                    <p>Developer</p>
+                </li>
+                <li>
+                    <h2>Monohar Goutami</h2>
+                    <p>Sr. Developer</p>
+                </li>
+                <li>
+                    <h2>Rakesh Sharma</h2>
+                    <p>Project Manager</p>
+                </li>
+                <li>
+                    <h2>Srinivasa Raman</h2>
+                    <p>UI Developer</p>
+                </li>
+                <li>
+                    <h2>Sanghamitra Chattopadhay</h2>
+                    <p>UI Designer</p>
+                </li>
+                <li>
+                    <h2>Krishna Gopal Dev</h2>
+                    <p>Software Designer </p>
+                </li>
+                <li>
+                    <h2>Mahalaxmi Radhakrishnan</h2>
+                    <p>Software Designer </p>
+                </li>
+                <li>
+                    <h2>Radhika Gupta</h2>
+                    <p>Software Designer </p>
+                </li>
+                <li>
+                    <h2>Padmini Rai</h2>
+                    <p>Project Manager</p>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <br>
+    <h2>Get the library here</h2><br>
+    <a href="https://github.com/devsubhajit/finescroll" target="_blank">fineScroll</a>
+    <script src="js/scrollbar.js"></script>
+    <script>
+        $(".scrollContainer").finescroll({
+            alignment:'right',
+            value:'4px',
+            bgColor:'#7878dc',
+            width:'8px'
+        });
+    </script>
+</body>
+
+</html>
