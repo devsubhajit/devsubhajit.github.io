@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        Canvas Image Crop basic
+    </title>
+    <link href="css/fineCrop.css" rel="stylesheet" />
+    <script src="js/jquery.min.js"></script>
+    <script src="js/fineCrop.js"></script>
+</head>
+
+<body>
+<input type="file" id="upphoto">
+<img id="croppedImg">
+
+
+<div class="cropHolder">
+    <div id="cropWrapper">
+        <img id="inputImage" src="images/face.jpg">
+    </div>
+
+    <div class="cropInputs">
+        <div class="inputtools">
+            <p>
+                <span><img src="images/horizontal.png"></span>
+                <span>horizontal movement</span>
+            </p>
+            <input type="range" class="cropRange" name="xmove" id="xmove" min="0" value="0">
+        </div>
+        <div class="inputtools">
+            <p>
+                <span><img src="images/vertical.png"></span>
+                <span>vertical movement</span>
+            </p>
+            <input type="range" class="cropRange" name="ymove" id="ymove" min="0" value="0">
+        </div>
+        <br>
+        <button class="cropButtons" id="zplus">
+            <img src="images/add.png">
+        </button>
+        <button class="cropButtons" id="zminus">
+            <img src="images/minus.png">
+        </button>
+        <br>
+        <button id="cropSubmit">submit</button>
+        <button id="closeCrop">Close</button>
+    </div>
+</div>
+<script>
+    $("#upphoto").finecrop({
+        viewHeight:500,
+        cropWidth:300,
+        cropHeight:100,
+        cropInput:'inputImage',
+        cropOutput:'croppedImg',
+        zoomValue:50
+    });
+</script>
+</body>
+
+</html>
