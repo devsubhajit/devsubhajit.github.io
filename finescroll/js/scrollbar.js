@@ -26,7 +26,7 @@
             var $objMargins = parseInt($($obj).find('ul').css('margin-top')) + parseInt($($obj).find('ul').css('margin-bottom'));
             var $objInnerHeight = $($obj).children().innerHeight();
             $($obj).wrap("<div class='scrollCont' style='height:" + $objHeight + "px; position:relative;'></div>");
-            $($obj).parent(".scrollCont").append("<div class='scroll-line'><div class='scroll-bar'></div><div class='scrollup'></div><div class='scrolldown'></div></div>");
+            $($obj).parent(".scrollCont").append("<div class='scroll-line'><div class='scroll-backbar'></div><div class='scroll-bar'></div><div class='scrollup'></div><div class='scrolldown'></div></div>");
 
 
             $($obj).parent(".scrollCont").find(".scroll-line").css({
@@ -57,10 +57,18 @@
                 backgroundColor:settings.fgColor,
                 height: $objInnerHeight - ($objHeight - ($objMargins / 2)) + 'px'
             });
+            $($obj).parent(".scrollCont").find(".scroll-backbar").css({
+                position:'absolute',
+                top:'0',
+                left:'0',
+                width:'100%',
+                backgroundColor:'transparent',
+                height: '100%'
+            });
 
             var lst = $objInnerHeight - $objHeight;
             var visibleDiff = ($objHeight - ($objMargins / 2)) - ($objInnerHeight - ($objHeight - ($objMargins / 2)));
-
+            console.log(visibleDiff);
             /* The Math for custom scrollBar
              *  latestscrollTop => lst  = (height of scroll element) - (height of container)
              *  visible scrolling area on bar => vsab => visibleDiff = (height of scroll line) - (height of scroll bar);
@@ -89,6 +97,23 @@
                 },
                 stop: function () {
                     isdrag = false;
+                }
+            });
+
+            $($obj).parent(".scrollCont").find(".scroll-backbar").click(function(e){
+                var scrollBar = $($obj).parent(".scrollCont").find(".scroll-bar "); // scroll bar
+                var offTop = $(scrollBar).offset().top - $($obj).offset().top; // scroll bars offset top
+                var posY = $(this).offset().top;
+                var actualClickValue = e.pageY - posY; // position of clicked point
+                var cst = $($obj).scrollTop();
+                if(actualClickValue > offTop){
+                    var scrollYvalue = actualClickValue - (offTop + $(scrollBar).height());
+                    var moreScroll = ((offTop +scrollYvalue) * lst) / visibleDiff;
+                    $($obj).scrollTop(moreScroll);
+                }else{
+                    var scrollYvalueless = offTop - actualClickValue;
+                    var lessScroll = ((offTop - scrollYvalueless) * lst) / visibleDiff;
+                    $($obj).scrollTop(lessScroll);
                 }
             });
 
