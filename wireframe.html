@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Folder Wireframe</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
+</head>
+
+<body class="text-center">
+    <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+        <main role="main" class="inner cover">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-12 col-lg-12 col-xl-12">
+                        <div class="align-middle">
+                            <button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#frontandback">ProSim
+                                Agile</button>
+                        </div>
+                        <!-- frontend backend -->
+                        <div class="align-middle collapse pt-4 pb-4 alert-light" id="frontandback">
+                            <button type="button" class="btn btn-secondary">Backend</button>
+                            <button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#frontend">Frontend</button>
+                        </div>
+                        <!-- frontend -->
+                        <div class="align-middle collapse pt-4 pb-4 alert-secondary" id="frontend">
+                            <button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#app">src</button>
+                            <button type="button" class="btn btn-link">package.json</button>
+                            <button type="button" class="btn btn-link">config.js</button>
+                        </div>
+                        <!-- app -->
+                        <div class="align-middle collapse pt-4 pb-4 alert-light" id="app">
+                            <button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#appinside">app</button>
+                            <button type="button" class="btn btn-secondary">assets</button>
+                            <button type="button" class="btn btn-link">index.html</button>
+                        </div>
+                        <!-- app inside-->
+                        <div class="align-middle collapse pt-4 pb-4 alert-secondary" id="appinside">
+                            <button type="button" class="btn btn-danger" data-toggle="collapse" data-target="#modules">modules</button>
+                            <button type="button" class="btn btn-secondary">services</button>
+                            <button type="button" class="btn btn-link">app.component</button>
+                            <button type="button" class="btn btn-link">app.module</button>
+                            <button type="button" class="btn btn-link">app.router</button>
+                            <button type="button" class="btn btn-success" data-toggle="collapse" data-target="#components">components</button>
+                        </div>
+                        <!-- modules -->
+                        <div class="align-middle collapse pt-2 pb-2 mt-1 alert-danger" id="modules">
+                            <button type="button" class="btn btn-light">angualr materials</button>
+                        </div>
+                        <!-- components -->
+                        <div class="align-middle collapse pt-2 pb-2 mt-1 alert-success" id="components">
+                            <button type="button" class="btn btn-light" data-toggle="collapse" data-target="#pageviwe">header</button>
+                            <button type="button" class="btn btn-light" data-toggle="collapse" data-target="#pageviwe">navbar</button>
+                            <button type="button" class="btn btn-light" data-toggle="collapse" data-target="#pageviwe">side panel</button>
+                            <button type="button" class="btn btn-light" data-toggle="collapse" data-target="#pageviwe">content body</button>
+                            <button type="button" class="btn btn-light" data-toggle="collapse" data-target="#pageviwe">pages</button>
+                        </div>
+                        <div class="row collapse" id="pageviwe">
+                                <div class="col-md-3 col-lg-3 col-xl-3" ></div>
+                            <div class="col-md-6 col-lg-6 col-xl-6 " >
+                                <div class="row">
+                                    <div class="col-md-12 col-lg-12 col-xl-12 alert-primary p-2">header</div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-3 col-lg-3 col-xl-3 alert-danger mt-2">side navbar</div>
+                                    <div class="col-md-9 col-lg-9 col-xl-9 alert-secondary mt-2 p-2">
+                                        content body 
+                                        <div class="alert-light mt-1 p-2">
+                                            router-outlet: pages
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
