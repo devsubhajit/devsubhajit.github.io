@@ -1,39 +1,42 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Subhajit Das</title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link href="css/easyUI-style.css" rel="stylesheet" type="text/css"/>
-        <link href="css/easyui-anaimate.css" rel="stylesheet" type="text/css"/>
-        <script src="js/easyUI-effects.js" type="text/javascript"></script>
-        <script src="js/easyUI-js.js" type="text/javascript"></script>
-    </head>
-    <body data-effect="bubble" data-page="index">
-        <canvas id="myCanvas" data-theme="255,51,51"></canvas>
-        <div class="easyui-wrapper">
-            <header class="easyui-title">
-                <h1>Subhajit Das</h1>
-                <p>Learing UI &AMP; Exploring new daily</p>
-            </header>
-            <!-- souzi div -->
-            <div id="souzi">
-                <div class="souzi-messageBox"></div>
-                <div class="souzi-expressions"></div>
-            </div>
-            <div class="easyui-logo vh-middle">
-                <span style="color:#fff;text-align: center;display: block;font-size: 12px;line-height: 18px;">click here!</span>
-                <ul class="easyui-navigation easyUI-animation">
-                    <li><a class="easyui-pullbox" href="javascript:void(0);">About me</a></li>
-                    <li>
-                        My Works
-                        <ul style="width: 300px; overflow-y: auto; height: 150px; overflow-x: hidden;">
-                            <li><a target="_blank" href="svg-chart/index.html">svg graphs</a></li>
-                            <li><a target="_blank" href="finescroll/index.html">jQuery Scroll plugin</a></li>
-                            <li><a target="_blank" href="fineCrop/index.html">jQuery Canvas Crop plugin</a></li>
-                            <li><a target="_blank" href="angularDemo/index.html">angular text link</a></li>
-                            <li><a target="_blank" href="wireframe.html">wireframe</a></li>
-                            <!-- <li><a href="carosal/index.html">easy slider</a></li>
+
+<head>
+    <title>Subhajit Das</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/easyUI-style.css" rel="stylesheet" type="text/css" />
+    <link href="css/easyui-anaimate.css" rel="stylesheet" type="text/css" />
+    <script src="js/easyUI-effects.js" type="text/javascript"></script>
+    <script src="js/easyUI-js.js" type="text/javascript"></script>
+</head>
+
+<body data-effect="bubble" data-page="index">
+    <canvas id="myCanvas" data-theme="255,51,51"></canvas>
+    <div class="easyui-wrapper">
+        <header class="easyui-title">
+            <h1>Subhajit Das</h1>
+            <p>Learing UI &AMP; Exploring new daily</p>
+        </header>
+        <!-- souzi div -->
+        <div id="souzi">
+            <div class="souzi-messageBox"></div>
+            <div class="souzi-expressions"></div>
+        </div>
+        <div class="easyui-logo vh-middle">
+            <span style="color:#fff;text-align: center;display: block;font-size: 12px;line-height: 18px;">click
+                here!</span>
+            <ul class="easyui-navigation easyUI-animation">
+                <li><a class="easyui-pullbox" href="javascript:void(0);">About me</a></li>
+                <li>
+                    My Works
+                    <ul style="width: 300px; overflow-y: auto; height: 150px; overflow-x: hidden;">
+                        <li><a target="_blank" href="svg-chart/index.html">svg graphs</a></li>
+                        <li><a target="_blank" href="finescroll/index.html">jQuery Scroll plugin</a></li>
+                        <li><a target="_blank" href="fineCrop/index.html">jQuery Canvas Crop plugin</a></li>
+                        <!-- <li><a target="_blank" href="angularDemo/index.html">angular text link</a></li> -->
+                        <li><a target="_blank" href="wireframe.html">wireframe</a></li>
+                        <!-- <li><a href="carosal/index.html">easy slider</a></li>
                             <li><a href="circlemenu/index.html">Circle Menu</a></li>
                             <li><a href="fun-with-svg-lines/index.html">Fun With SVG</a></li>
                             <li><a href="gallery/index.html">Gallery</a></li>
@@ -43,24 +46,81 @@
                             <li><a href="svg-traile/index.html">SVG trail</a></li>
                             <li><a href="vertical_and_horizontal/index.html">Vertical and horizontal gallery</a></li>
                             <li><a href="drawCircle/index.html">draw circle</a></li> -->
+                    </ul>
+                </li>
+                <li>Connect me
+                    <ul style="width: 300px; overflow-y: auto; height: 150px; overflow-x: hidden;">
+                        <li>Phone: <a href="tel:86974 17376">86974 17376</a></li>
+                        <li>Skype: <a href="skype:subhajit795?chat">subhajit795</a></li>
+                        <li>Email: <a href="mailto:dascorp@live.in">dascorp@live.in</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div id="blackOverlay" class="easyui-overlay easyui-commonAnimate"></div>
+        <div id="easyui-about" class="easyui-sideview">
+            <header class="headerPart">
+                <h1>Subhajit Das</h1>
+                <p>Full Stack Developer</p>
+            </header>
+            <div style="padding: 20px 40px; color: rgba(0,0,0,0.4); font-size: 13px;">
+                <div style="width: 100%; height: 240px; display: block;">
+                    <div style="margin: 10px 10px 0 0; float:left;">
+                        <a class="imageholder" href="./images/subhajit.jpg" target="_blank">
+                            <img src="./images/subhajit.jpg" alt="profile" />
+                        </a>
+                    </div>
+                    <div style="float: left; margin-left: 40px;">
+                        <p style="color:rgba(255,51,51,1); font-size: 15px;"><strong>Technical Skills</strong></p>
+                        <ul>
+                            <li>HTML/ HTML5: (Canvas / SVG)</li>
+                            <li>CSS: packages - Bootstrap</li>
+                            <li>Javascript: jQuery (plugin creator) </li>
+                            <li>Nodejs</li>
+                            <li>Angular/ AngularJs</li>
+                            <li>React/ ReactNative</li>
+                            <li>MongoDB</li>
+                            <li>Express</li>
                         </ul>
-                    </li>
-                    <li>Connect me</li>
-                </ul>
+                        <p style="color:rgba(255,51,51,1); font-size: 15px;"><strong>Creative Skills</strong></p>
+                        <ul>
+                            <li>Painting</li>
+                            <li>Web Designing</li>
+                            <li>App Designing</li>
+                            <li>Photoshop</li>
+                            <li>Illustrator</li>
+                        </ul>
+                    </div>
+                </div>
+                <div style="clear: both; height: 20px;"></div>
+                <div>
+                    <p style="line-height: 15px;">I have been always wanted to be a <span
+                            style="color:rgba(255,51,51,1)">Game Developer</span>. In this way after school I have
+                        studied
+                        <span style="color:rgba(255,51,51,1)">Animation</span>. But very soon I have realized only
+                        animation
+                        will not help me to achive my goal.
+                        So after discussion with my professors I have started doing <span
+                            style="color:rgba(255,51,51,1)">coding</span>, not theoritically but practically.
+                        This small college projects helped me to get jobs and after working in some small and mediam
+                        scale companies I have gathered enough
+                        experiences to full fill my dream.
+                        During this period I have created one <span style="color:rgba(255,51,51,1)">game</span>, which
+                        has not published yet, a long data entry process is waiting for it... <span
+                            style="color:rgba(255,51,51,1)">:)</span>
+                        But the journey is still on.
+                    </p>
+                </div>
+                <div style="margin-top: 50px; font-size: 18px;">
+                    Here is my latest <a href="./images/CV_Subhajit_Das-pdf.pdf" style="color: blue;" target="_blank">Resume</a> 
+                </div>
+
             </div>
-            <div id="blackOverlay" class="easyui-overlay easyui-commonAnimate"></div>
-            <div id="easyui-about" class="easyui-sideview">
-                <header class="headerPart">
-                    <h1>Subhajit Das</h1>
-                    <p>In finibus felis purus, non euismod nisi consectetur sed.</p>
-                </header>
-                <div style="padding: 20px 40px; color: rgba(0,0,0,0.4); font-size: 13px;">
-                       
-                </div>
-                <div class="aboutClose" id="closeAboutUI-easyui">
-                    X
-                </div>
+            <div class="aboutClose" id="closeAboutUI-easyui">
+                X
             </div>
         </div>
-    </body>
+    </div>
+</body>
+
 </html>
