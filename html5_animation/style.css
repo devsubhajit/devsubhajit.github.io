@@ -1,0 +1,77 @@
+﻿	@charset "utf-8";
+/* CSS Document */
+
+@font-face {
+	font-family:'Conv_Helvetica-Condensed';
+	src: url('fonts/Helvetica-Condensed.eot');
+	src: local('☺'), url('fonts/Helvetica-Condensed.woff') format('woff'), url('fonts/Helvetica-Condensed.ttf') format('truetype'), url('fonts/Helvetica-Condensed.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+body {padding:0px; margin:0px; background-color:#fff;}
+
+/*==================Background ==============*/
+.bg-wrapper {width:100%; height:100%}
+.topper-bg-box {width:100%; padding:0% 0%; background:rgba(0,0,0,0.8); position:absolute; top:0px; left:0px;}
+.footer-bg-box {width:100%; padding:0% 0%; background:#181818; position:absolute; bottom:0px; left:0px;}
+
+.wrapper {width:1000px; background-color:transparent; height:80%; overflow:visible; position:absolute; top:20%; left:50%; margin-left:-500px;}
+.newbees_loader {width:260px; height:260px; position:absolute; top:50%; left:50%; margin:-130px 0 0 -130px;}
+
+.phonebox {width:27.8%; height:515px; position:relative; margin:0 auto;}
+.phonebg {width:100%; height:515px; background-color:#2D2D2D; border-radius:15px; position:absolute; top:0px; left:0px;}
+		.screen_white {width:270px; height:400px; background-color:#fff; position:absolute; top:25px; left:15px;}
+		.rwound_button {width:40px; height:40px; border-radius:20px; -webkit-border-radius:20px; border:1px solid #6C6C6C; position:absolute; bottom:4%; left:50%; margin-left:-20px;}
+		.insidesqr {width:6px; height:6px; border:1px solid #6c6c6c;}
+		
+.screenOne {width:90%; height:400px; background-color:#0E7BBC; position:absolute; top:7%; left:5%;
+			/*transform: translate(-300px, 60px) rotate(-30deg) skew(45deg, 20deg) scale(0.5, 0.5); opacity:1;
+			-webkit-transform: translate(-300px, 60px) rotate(-30deg) skew(45deg, 20deg) scale(0.5, 0.5); opacity:1;*/
+}
+			.nbload1 {width:100px; height:100px; position:absolute; top:50%; left:50%; margin:-50px 0 0 -50px;}
+			.phonebody1 {position:absolute; left:5%px; top:7%; width:500px; height:205px;
+						transform: translate(-460px, 260px); -webkit-transform: translate(-460px, 260px);	
+			}
+			.report-bg-box {widht:100%; height:100%; overflow:hidden;}
+			.report-bg {transform: translate(0%, -100%); -webkit-transform: translate(0%, -100%);}
+			.report-ani-box {position:absolute; left:5%; top:0%; width:450px; height:285px; background-color:transparent; overflow:visible;
+							transform: translate(-420px, 24px); -webkit-transform: translate(-420px, 24px); perspective:450px; -webkit-perspective:450px; 	
+			}
+			.per {position:absolute; position:absolute; top:0px; left:0px; width:450px; height:285px;}
+			.freport {opacity:0;}
+			/*============ report tab menu================*/
+			.reporttabmenubox {opacity:0;}
+			.rtabmenu_one {transform: translate(0px, 150px) scale(1, 0.5); -webkit-transform: translate(0px, 150px) scale(1, 0.5);}
+			.rtabmenu_two {transform: translate(90px, 150px) scale(1, 0.5); -webkit-transform: translate(90px, 150px) scale(1, 0.5);}
+			.rtabmenu_three {transform: translate(180px, 150px) scale(1, 0.5); -webkit-transform: translate(180px, 150px) scale(1, 0.5);}
+			.rtabmenu_four {transform: translate(270px, 150px) scale(1, 0.5); -webkit-transform: translate(270px, 150px) scale(1, 0.5);}
+			
+			
+.screenTwo {width:90%; height:400px; background-color:#42AE68; position:absolute; top:7%; left:5%;/* display:none;*/}
+			.frontend {width:100%; height:400px; background-color:#EAEAEA;}
+
+.screenThree {width:90%; height:400px; background-color:#8A3C6C; position:absolute; top:7%; left:5%; overflow:hidden; /*display:none;*/}
+			.nbload3 {width:100px; height:100px; position:absolute; top:50%; left:50%; margin:-50px 0 0 -50px;}
+			.dashboard {position:absolute; width:100%; height:800px; top:0%; left:0px; background-color:#26303c; opacity:0;}
+			/*--------- svg group ----------------*/
+			#dashtop {
+				transform: translate(0px, -40px); -webkit-transform: translate(0px, -40px);
+			}
+			#piechart {
+				transform: translate(400px, 0px); -webkit-transform: translate(400px, 0px);
+			}
+			#graphchart {
+				transform: translate(0px, 0px); -webkit-transform: translate(0px, 0px);
+			}
+			#sidemenu {
+				transform: translate(-200px, 0px); -webkit-transform: translate(-200px, 0px);
+			}
+			#sidemenumove {
+				transform: translate(0px, 0px); -webkit-transform: translate(0px, 0px);
+				opacity:0.6;
+			}
+
+/*-------------- report text ---------------*/			
+.re-text {font:normal 30px/26px Arial, Helvetica, sans-serif; }
+

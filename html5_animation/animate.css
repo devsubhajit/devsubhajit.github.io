@@ -1,0 +1,1207 @@
+	@charset "utf-8";
+/* CSS Document */
+
+/*================= NewBees Loader Animation =====================*/	
+.paths {opacity:1;
+  animation: dashs 4s linear forwards; -webkit-animation: dashs 4s linear forwards;
+  animation-delay: 9s; -webkit-animation-delay:9s;
+}
+
+@keyframes dashs {
+  /*from {stroke-dashoffset: 0;}*/
+  0% {opacity: 1; /*stroke-dashoffset: 0;*/}
+  3% {opacity:0;}
+  97% {opacity:0;}
+  100% {opacity:1;}
+}
+
+@-webkit-keyframes dashs {
+  /*from {stroke-dashoffset: 0;}*/
+  0% {opacity: 1; /*stroke-dashoffset: 0;*/}
+  3% {opacity:0;}
+  97% {opacity:0;}
+  100% {opacity:1;}
+}
+
+.path {
+  stroke-dasharray: 40; -webkit-stroke-dasharray: 40;
+  stroke-dashoffset: 400; -webkit-stroke-dashoffset: 400;
+  animation: dash 3s  infinite linear /*forwards*/; -webkit-animation: dash 3s infinite linear /*forwards*/;
+  animation-delay: 0s; -webkit-animation-delay:0s;
+}
+
+@keyframes dash {
+  /*from {stroke-dashoffset: 0;}*/
+  to {stroke-dashoffset: 0; /*stroke-dashoffset: 0;*/}
+}
+
+@-webkit-keyframes dash {
+  /*from {stroke-dashoffset: 0;}*/
+  to {stroke-dashoffset: 0;}
+}
+
+.hex_ani1 {
+	animation:hexone 3s infinite alternate; -webkit-animation:hexone 3s infinite alternate;
+	animation-delay:3s; -webkit-animation-delay:3s;
+}
+@keyframes hexone {
+	from {opacity:1px;}
+	to {opacity:0.3;}
+}
+@-webkit-keyframes hexone {
+	from {opacity:1px;}
+	to {opacity:0.3;}
+}
+
+/*==================== top hexagone ===================*/
+.hex_ani2 {
+	animation:hextwo 0.8s infinite alternate; -webkit-animation:hextwo 0.8s infinite alternate;
+	animation-delay:0s; -webkit-animation-delay:0s;
+}
+@keyframes hextwo {
+	from {opacity:1px;}
+	to {opacity:0.6;}
+}
+@-webkit-keyframes hextwo {
+	from {opacity:1px;}
+	to {opacity:0.6;}
+}
+
+
+/*==================== bottom hexagone ===================*/
+.hex_ani3 {
+	animation:hexthree 0.6s infinite alternate; -webkit-animation:hexthree 0.6s infinite alternate;
+	animation-delay:0s; -webkit-animation-delay:0s;
+}
+@keyframes hexthree {
+	from {opacity:1px;}
+	to {opacity:0.7;}
+}
+@-webkit-keyframes hexthree {
+	from {opacity:1px;}
+	to {opacity:0.7;}
+}
+
+/*==============Screen one loader animation==============*/
+.pathso {opacity:1;
+  animation: dashso 4s linear forwards; -webkit-animation: dashso 4s linear forwards;
+  animation-delay: 9s; -webkit-animation-delay:9s;
+}
+
+@keyframes dashso {
+  /*from {stroke-dashoffset: 0;}*/
+  to {opacity: 0.3; /*stroke-dashoffset: 0;*/}
+}
+
+@-webkit-keyframes dashso {
+  /*from {stroke-dashoffset: 0;}*/
+  to {opacity: 0.3; /*stroke-dashoffset: 0;*/}
+}
+
+/*======================= background animation =====================*/
+/*--========= foot bg ===========--*/
+.footer-bg-box {animation-name:mybgfooter; -webkit-animation-name:mybgfooter;
+				animation-duration:120s; -webkit-animation-duration:120s;
+				animation-timing-function:ease; -webkit-animation-timing-function:ease;
+				animation-iteration-count:1; -webkit-animation-iteration-count:1;
+				animation-direction:normal; -webkit-animation-direction:normal;
+				animation-delay:1s; -webkit-animation-delay:1s;
+				animation-play-state:running; -webkit-animation-play-state:running;
+				animation-fill-mode:forwards; -webkit-animation-fill-mode:forwards;
+}
+@keyframes mybgfooter {
+	0%{padding:0% 0%;}
+	6%{padding:0% 0%;}
+	6.8%{padding:13% 0%;}
+	100%{padding:13% 0%;}
+}
+@-webkit-keyframes mybgfooter {
+	0%{padding:0% 0%;}
+	6%{padding:0% 0%;}
+	6.8%{padding:13% 0%;}
+	100%{padding:13% 0%;}
+}
+/*--========= Top bg ===========--*/
+.topper-bg-box {animation-name:mybgtopper; -webkit-animation-name:mybgtopper;
+				animation-duration:120s; -webkit-animation-duration:120s;
+				animation-timing-function:ease; -webkit-animation-timing-function:ease;
+				animation-iteration-count:1; -webkit-animation-iteration-count:1;
+				animation-direction:normal; -webkit-animation-direction:normal;
+				animation-delay:1s; -webkit-animation-delay:1s;
+				animation-play-state:running; -webkit-animation-play-state:running;
+				animation-fill-mode:forwards; -webkit-animation-fill-mode:forwards;
+}
+@keyframes mybgtopper {
+	0%{padding:0% 0%;}
+	6%{padding:0% 0%;}
+	6.8%{padding:14% 0%;}
+	100%{padding:14% 0%;}
+}
+@-webkit-keyframes mybgtopper {
+	0%{padding:0% 0%;}
+	6%{padding:0% 0%;}
+	6.8%{padding:14% 0%;}
+	100%{padding:14% 0%;}
+}
+
+
+
+/*phone bg animation*/
+.animate_phone {animation-name:myphone ; -webkit-animation-name:myphone ;
+				animation-duration: 120s; -webkit-animation-duration: 120s;
+				animation-timing-function: ease; -webkit-animation-timing-function: ease;
+				animation-iteration-count: 1; -webkit-animation-iteration-count: 1;	
+				animation-direction: normal; -webkit-animation-direction: normal;
+				animation-delay: 1s; -webkit-animation-delay:1s;
+				animation-play-state: running; -webkit-animation-play-state: running;
+				animation-fill-mode: forwards; -webkit-animation-fill-mode: forwards;
+}
+
+@keyframes myphone
+{
+ 	0% {top:0px; opacity:1;}
+	2% {transform: translate(0px, 0px) rotate(0deg) skew(0deg, 0deg) scale(0.6, 0.6);}
+	4%{transform: translate(0px, 0px) rotate(0deg) skew(55deg, 0deg) scale(0.4, 0.4);}
+	4.5%{transform: translate(0px, 0px) rotate(0deg) skew(55deg, 0deg) scale(0.4, 0.4);}	
+	5.5%{ transform: translate(30px, -20px) rotate(0deg) skew(0deg, 0deg) scale(0.5, 0.5);}
+	6%{ transform: translate(30px, -20px) rotate(0deg) skew(0deg, 0deg) scale(0.9, 0.9);}
+	6.5%{ transform: translate(30px, -20px) rotate(0deg) skew(0deg, 0deg) scale(0.9, 0.9); background-color:#2D2D2D;}
+	6.8%{ transform: translate(30px, -30px) rotate(0deg) skew(0deg, 0deg) scale(0.8, 0.8); background-color:#d5d5d5;}	
+	10%{transform: translate(30px, -30px) rotate(0deg) skew(0deg, 0deg) scale(0.8, 0.8); background-color:#d5d5d5;}
+	25%{ transform: translate(30px, -30px) rotate(0deg) skew(0deg, 0deg) scale(0.8, 0.8); opacity:1; background-color:#d5d5d5;}
+	26%{ transform: translate(90px, -30px) rotate(0deg) skew(0deg, 0deg) scale(0.6, 0.6); opacity:0.6; background-color:#d5d5d5;}
+	100%{transform: translate(90px, -30px) rotate(0deg) skew(0deg, 0deg) scale(0.6, 0.6); opacity:0.6; background-color:#d5d5d5;}
+}
+
+@-webkit-keyframes myphone /*Safari and Chrome*/
+{
+	0% {top:0px; opacity:1;}
+	2% { -webkit-transform: translate(0px, 0px) rotate(0deg) skew(0deg, 0deg) scale(0.6, 0.6);}
+	4% { -webkit-transform: translate(0px, 0px) rotate(0deg) skew(55deg, 7deg) scale(0.4, 0.4);}
+	4.5% { -webkit-transform: translate(0px, 0px) rotate(0deg) skew(55deg, 7deg) scale(0.4, 0.4);}
+	5.5%{ -webkit-transform: translate(30px, -20px) rotate(0deg) skew(0deg, 0deg) scale(0.5, 0.5);}
+	6%{ -webkit-transform: translate(30px, -20px) rotate(0deg) skew(0deg, 0deg) scale(0.9, 0.9);}
+	6.5%{ -webkit-transform: translate(30px, -20px) rotate(0deg) skew(0deg, 0deg) scale(0.9, 0.9); background-color:#2D2D2D;}
+	6.8%{ -webkit-transform: translate(30px, -30px) rotate(0deg) skew(0deg, 0deg) scale(0.8, 0.8); background-color:#d5d5d5;}	
+	10%{ -webkit-transform: translate(30px, -30px) rotate(0deg) skew(0deg, 0deg) scale(0.8, 0.8); background-color:#d5d5d5;}
+	25%{ -webkit-transform: translate(30px, -30px) rotate(0deg) skew(0deg, 0deg) scale(0.8, 0.8); opacity:1; background-color:#d5d5d5;}
+	26%{ -webkit-transform: translate(90px, -30px) rotate(0deg) skew(0deg, 0deg) scale(0.6, 0.6); opacity:0.9; background-color:#d5d5d5;}
+	100%{ -webkit-transform: translate(90px, -30px) rotate(0deg) skew(0deg, 0deg) scale(0.6, 0.6); opacity:0.9; background-color:#d5d5d5;}	
+}
+
+/*screen one animation*/
+.aniscreen_one {animation-name:firstscreen ; -webkit-animation-name:firstscreen ;
+				animation-duration: 120s; -webkit-animation-duration: 120s;
+				animation-timing-function: ease; -webkit-animation-timing-function: ease;
+				animation-iteration-count: 1; -webkit-animation-iteration-count: 1;	
+				animation-direction: normal; -webkit-animation-direction: normal;
+				animation-delay: 1s; -webkit-animation-delay:1s;
+				animation-play-state: running; -webkit-animation-play-state: running;
+				animation-fill-mode: forwards; -webkit-animation-fill-mode: forwards;
+}
+
+@keyframes firstscreen
+{
+ 	0% {top:25px; left:15px; opacity:1;}
+	2% {transform: translate(0px, 0px) rotate(0deg) skew(0deg, 0deg) scale(0.6, 0.6);}
+	4%{transform: translate(0px, 20px) rotate(0deg) skew(55deg, 0deg) scale(0.4, 0.4);}
+	4.5%{transform: translate(30px, -20px) rotate(0deg) skew(55deg, 0deg) scale(0.4, 0.4);}
+	5.5%{ transform: translate(30px, -20px) rotate(0deg) skew(0deg, 0deg) scale(0.5, 0.5);}
+	6%{ transform: translate(30px, -20px) rotate(0deg) skew(0deg, 0deg) scale(0.9, 0.9);}
+	6.5%{ transform: translate(-220px, -20px) rotate(0deg) skew(0deg, 0deg) scale(0.9, 0.9); opacity:1;}
+	6.8%{ transform: translate(-220px, -20px) rotate(0deg) skew(0deg, 0deg) scale(0.8, 0.8); opacity:1;}
+	10%{transform: translate(-220px, -20px) rotate(0deg) skew(0deg, 0deg) scale(0.8, 0.8); opacity:1;}
+	20%{transform: translate(-220px, -20px) rotate(0deg) skew(0deg, 0deg) scale(0.8, 0.8); opacity:1;}
+	21%{transform: translate(-260px, -20px) rotate(-30deg) skew(0deg, 0deg) scale(0.7, 0.7); opacity:1;}
+	21.6%{transform: translate(-350px, 60px) rotate(-30deg) skew(45deg, 20deg) scale(0.5, 0.5); opacity:1; background-color:#0E7BBC;}
+	25.9%{transform: translate(-350px, 145px) rotate(-30deg) skew(45deg, 20deg) scale(0.5, 0.5); opacity:1; background-color:#0E7BBC;}
+	26%{transform: translate(-350px, 145px) rotate(-30deg) skew(45deg, 20deg) scale(0.5, 0.5); opacity:1; background-color:#000;}
+	26.3%{transform: translate(-350px, 145px) rotate(-30deg) skew(45deg, 20deg) scale(0.5, 0.5); opacity:1; background-color:#000;}
+	39%{transform: translate(-350px, 145px) rotate(-30deg) skew(45deg, 20deg) scale(0.5, 0.5); opacity:1; background-color:#000;}
+	43%{transform: translate(-350px, 145px) rotate(-30deg) skew(45deg, 20deg) scale(0.5, 0.5); opacity:0; background-color:#000;}
+	100%{transform: translate(-350px, 145px) rotate(-30deg) skew(45deg, 20deg) scale(0.5, 0.5); opacity:0; background-color:#000;}
+}
+
+@-webkit-keyframes firstscreen /*Safari and Chrome*/
+{
+	0% {top:25px; left:15px; opacity:1;}
+	2% { -webkit-transform: translate(0px, 0px) rotate(0deg) skew(0deg, 0deg) scale(0.6, 0.6);}
+	4% { -webkit-transform: translate(0px, 20px) rotate(0deg) skew(55deg, 7deg) scale(0.4, 0.4);}
+	4.5%{ -webkit-transform: translate(30px, -20px) rotate(0deg) skew(55deg, 0deg) scale(0.4, 0.4);}
+	5.5%{ -webkit-transform: translate(30px, -20px) rotate(0deg) skew(0deg, 0deg) scale(0.5, 0.5);}
+	6%{ -webkit-transform: translate(30px, -20px) rotate(0deg) skew(0deg, 0deg) scale(0.9, 0.9);}
+	6.5%{-webkit-transform: translate(-220px, -20px) rotate(0deg) skew(0deg, 0deg) scale(0.9, 0.9); opacity:1;}
+	6.8%{-webkit-transform: translate(-220px, -20px) rotate(0deg) skew(0deg, 0deg) scale(0.8, 0.8); opacity:1;}
+	10%{-webkit-transform: translate(-220px, -20px) rotate(0deg) skew(0deg, 0deg) scale(0.8, 0.8); opacity:1;}
+	20%{-webkit-transform: translate(-220px, -20px) rotate(0deg) skew(0deg, 0deg) scale(0.8, 0.8); opacity:1;}
+	21%{-webkit-transform: translate(-260px, -20px) rotate(-30deg) skew(0deg, 0deg) scale(0.7, 0.7); opacity:1;}
+	21.6%{-webkit-transform: translate(-350px, 60px) rotate(-30deg) skew(45deg, 20deg) scale(0.5, 0.5); opacity:1; background-color:#0E7BBC;}
+	25.9%{-webkit-transform: translate(-350px, 145px) rotate(-30deg) skew(45deg, 20deg) scale(0.5, 0.5); opacity:1; background-color:#0E7BBC;}
+	26%{-webkit-transform: translate(-350px, 145px) rotate(-30deg) skew(45deg, 20deg) scale(0.5, 0.5); opacity:1; background-color:#000;}
+	26.3%{-webkit-transform: translate(-350px, 145px) rotate(-30deg) skew(45deg, 20deg) scale(0.5, 0.5); opacity:1; background-color:#000;}
+	39%{transform: translate(-350px, 145px) rotate(-30deg) skew(45deg, 20deg) scale(0.5, 0.5); opacity:1; background-color:#000;}
+	43%{transform: translate(-350px, 145px) rotate(-30deg) skew(45deg, 20deg) scale(0.5, 0.5); opacity:0; background-color:#000;}
+	100%{transform: translate(-350px, 145px) rotate(-30deg) skew(45deg, 20deg) scale(0.5, 0.5); opacity:0; background-color:#000;}
+}
+
+/*screen two animation*/
+.aniscreen_two {animation-name:secondscreen; -webkit-animation-name:secondscreen;
+				animation-duration: 120s; -webkit-animation-duration: 120s;
+				animation-timing-function: ease; -webkit-animation-timing-function: ease;
+				animation-iteration-count: 1; -webkit-animation-iteration-count: 1;	
+				animation-direction: normal; -webkit-animation-direction: normal;
+				animation-delay: 1s; -webkit-animation-delay:1s;
+				animation-play-state: running; -webkit-animation-play-state: running;
+				animation-fill-mode: forwards; -webkit-animation-fill-mode: forwards;
+}
+
+@keyframes secondscreen
+{
+ 	0% {top:25px; opacity:1;}
+	2% {transform: translate(0px, 0px) rotate(0deg) skew(0deg, 0deg) scale(0.6, 0.6);}
+	4%{transform: translate(0px, 20px) rotate(0deg) skew(55deg, 0deg) scale(0.4, 0.4);}
+	4.5%{ transform: translate(30px, -50px) rotate(0deg) skew(55deg, 0deg) scale(0.4, 0.4);}
+	5.5%{ transform: translate(30px, -50px) rotate(0deg) skew(0deg, 0deg) scale(0.5, 0.5);}
+	6%{ transform: translate(30px, -20px) rotate(0deg) skew(0deg, 0deg) scale(0.9, 0.9);}
+	6.5%{ transform: translate(280px, -20px) rotate(0deg) skew(0deg, 0deg) scale(0.9, 0.9); opacity:1;}
+	6.8%{ transform: translate(280px, -20px) rotate(0deg) skew(0deg, 0deg) scale(0.8, 0.8); opacity:1;}
+	10%{transform: translate(280px, -20px) rotate(0deg) skew(0deg, 0deg) scale(0.8, 0.8); opacity:1;}
+	25%{transform: translate(280px, -20px) rotate(0deg) skew(0deg, 0deg) scale(0.8, 0.8); opacity:1;}
+	26%{transform: translate(280px, -20px) rotate(0deg) skew(0deg, 0deg) scale(0.6, 0.6); opacity:0.9;}
+	100%{transform: translate(280px, -20px) rotate(0deg) skew(0deg, 0deg) scale(0.6, 0.6); opacity:0.9;}
+}
+
+@-webkit-keyframes secondscreen /*Safari and Chrome*/
+{
+	0% {top:25px; opacity:1;}
+	2% { -webkit-transform: translate(0px, 0px) rotate(0deg) skew(0deg, 0deg) scale(0.6, 0.6);}
+	4% { -webkit-transform: translate(0px, 20px) rotate(0deg) skew(55deg, 7deg) scale(0.4, 0.4);}
+	4.5%{ -webkit-transform: translate(30px, -50px) rotate(0deg) skew(55deg, 0deg) scale(0.4, 0.4);}
+	5.5%{ -webkit-transform: translate(30px, -50px) rotate(0deg) skew(0deg, 0deg) scale(0.5, 0.5);}
+	6%{ -webkit-transform: translate(30px, -20px) rotate(0deg) skew(0deg, 0deg) scale(0.9, 0.9);}
+	6.5%{ -webkit-transform: translate(280px, -20px) rotate(0deg) skew(0deg, 0deg) scale(0.9, 0.9); opacity:1;}
+	6.8%{ -webkit-transform: translate(280px, -20px) rotate(0deg) skew(0deg, 0deg) scale(0.8, 0.8); opacity:1;}
+	10%{-webkit-transform: translate(280px, -20px) rotate(0deg) skew(0deg, 0deg) scale(0.8, 0.8); opacity:1;}
+	25%{-webkit-transform: translate(280px, -20px) rotate(0deg) skew(0deg, 0deg) scale(0.8, 0.8); opacity:1;}
+	26%{-webkit-transform: translate(280px, -20px) rotate(0deg) skew(0deg, 0deg) scale(0.6, 0.6); opacity:0.9;}
+	100%{-webkit-transform: translate(280px, -20px) rotate(0deg) skew(0deg, 0deg) scale(0.6, 0.6); opacity:0.9;}
+}
+
+/*screen three animation*/
+
+
+.aniscreen_three {animation-name:thirdscreen; -webkit-animation-name:thirdscreen;
+				animation-duration: 120s; -webkit-animation-duration: 120s;
+				animation-timing-function: ease; -webkit-animation-timing-function: ease;
+				animation-iteration-count: 1; -webkit-animation-iteration-count: 1;	
+				animation-direction: normal; -webkit-animation-direction: normal;
+				animation-delay: 1s; -webkit-animation-delay:1s;
+				animation-play-state: running; -webkit-animation-play-state: running;
+				animation-fill-mode: forwards; -webkit-animation-fill-mode: forwards;
+}
+
+@keyframes thirdscreen
+{
+ 	0% {top:25px; opacity:1;}
+	2% {transform: translate(0px, 0px) rotate(0deg) skew(0deg, 0deg) scale(0.6, 0.6);}
+	4%{transform: translate(0px, 20px) rotate(0deg) skew(55deg, 0deg) scale(0.4, 0.4);}
+	4.5%{ transform: translate(30px, -80px) rotate(0deg) skew(55deg, 0deg) scale(0.4, 0.4);}
+	5.5%{ transform: translate(30px, -80px) rotate(0deg) skew(0deg, 0deg) scale(0.5, 0.5);}
+	6%{ transform: translate(30px, -20px) rotate(0deg) skew(0deg, 0deg) scale(0.9, 0.9);}
+	6.5%{ transform: translate(30px, -20px) rotate(0deg) skew(0deg, 0deg) scale(0.9, 0.9); opacity:1;}
+	6.8%{ transform: translate(30px, -20px) rotate(0deg) skew(0deg, 0deg) scale(0.8, 0.8); opacity:0.8;}	
+	10%{transform: translate(30px, -20px) rotate(0deg) skew(0deg, 0deg) scale(0.8, 0.8); opacity:0.8;}
+	25%{transform: translate(30px, -20px) rotate(0deg) skew(0deg, 0deg) scale(0.8, 0.8); opacity:1;}
+	26%{transform: translate(90px, -20px) rotate(0deg) skew(0deg, 0deg) scale(0.6, 0.6); opacity:0.9;}
+	100%{transform: translate(90px, -20px) rotate(0deg) skew(0deg, 0deg) scale(0.6, 0.6); opacity:0.9;}
+}
+
+@-webkit-keyframes thirdscreen /*Safari and Chrome*/
+{
+	0% {top:25px; opacity:1;}
+	2% { -webkit-transform: translate(0px, 0px) rotate(0deg) skew(0deg, 0deg) scale(0.6, 0.6);}
+	4% { -webkit-transform: translate(0px, 20px) rotate(0deg) skew(55deg, 7deg) scale(0.4, 0.4);}
+	4.5%{ -webkit-transform: translate(30px, -80px) rotate(0deg) skew(55deg, 0deg) scale(0.4, 0.4);}
+	5.5%{ -webkit-transform: translate(30px, -80px) rotate(0deg) skew(0deg, 0deg) scale(0.5, 0.5);}
+	6%{ -webkit-transform: translate(30px, -20px) rotate(0deg) skew(0deg, 0deg) scale(0.9, 0.9);}
+	6.5%{ -webkit-transform: translate(30px, -20px) rotate(0deg) skew(0deg, 0deg) scale(0.9, 0.9); opacity:1;}	
+	6.8%{ -webkit-transform: translate(30px, -20px) rotate(0deg) skew(0deg, 0deg) scale(0.8, 0.8); opacity:1;}	
+	10%{-webkit-transform: translate(30px, -20px) rotate(0deg) skew(0deg, 0deg) scale(0.8, 0.8); opacity:1;}
+	25%{-webkit-transform: translate(30px, -20px) rotate(0deg) skew(0deg, 0deg) scale(0.8, 0.8); opacity:1;}
+	26%{-webkit-transform: translate(90px, -20px) rotate(0deg) skew(0deg, 0deg) scale(0.6, 0.6); opacity:0.9;}
+	100%{-webkit-transform: translate(90px, -20px) rotate(0deg) skew(0deg, 0deg) scale(0.6, 0.6); opacity:0.9;}
+}
+/*Dashboard animation*/
+.dashboard {
+	animation-name:dashboards; -webkit-animation-name:dashboards;
+	animation-duration: 1s; -webkit-animation-duration: 1s;
+	animation-timing-function: ease; -webkit-animation-timing-function: ease;
+	animation-iteration-count: 1; -webkit-animation-iteration-count: 1;	
+	animation-direction: normal; -webkit-animation-direction: normal;
+	animation-delay: 12s; -webkit-animation-delay:12s;
+	animation-play-state: running; -webkit-animation-play-state: running;
+	animation-fill-mode: forwards; -webkit-animation-fill-mode: forwards;
+}
+
+@keyframes dashboards
+{
+ 	0% {opacity:0;}
+	100% {opacity:1;}
+}
+
+@-webkit-keyframes dashboards
+{
+ 	0% {opacity:0;}
+	100% {opacity:1;}
+}
+
+/*-------------dashboard top menu --------------------*/
+#dashtop {
+	animation-name:topdash; -webkit-animation-name:topdash;
+	animation-duration: 10s; -webkit-animation-duration: 10s;
+	animation-timing-function: ease; -webkit-animation-timing-function: ease;
+	animation-iteration-count: 1; -webkit-animation-iteration-count: 1;	
+	animation-direction: normal; -webkit-animation-direction: normal;
+	animation-delay: 14s; -webkit-animation-delay:14s;
+	animation-play-state: running; -webkit-animation-play-state: running;
+	animation-fill-mode: forwards; -webkit-animation-fill-mode: forwards;	
+}
+
+@keyframes topdash
+{
+ 	0% {transform: translate(0px, -40px);}
+	3% {transform: translate(0px, 0px);}
+	100% {transform: translate(0px, 0px);}
+}
+
+@-webkit-keyframes topdash
+{
+ 	0% {-webkit-transform: translate(0px, -40px);}
+	3% {-webkit-transform: translate(0px, 0px);}
+	100% {-webkit-transform: translate(0px, 0px);}
+}
+
+/*-------------------- Pie Chart Animation ----------------------*/
+#piechart {
+	animation-name:chartpie; -webkit-animation-name:chartpie;
+	animation-duration: 10s; -webkit-animation-duration: 10s;
+	animation-timing-function: ease; -webkit-animation-timing-function: ease;
+	animation-iteration-count: 1; -webkit-animation-iteration-count: 1;	
+	animation-direction: normal; -webkit-animation-direction: normal;
+	animation-delay: 14s; -webkit-animation-delay:14s;
+	animation-play-state: running; -webkit-animation-play-state: running;
+	animation-fill-mode: forwards; -webkit-animation-fill-mode: forwards;	
+}
+
+@keyframes chartpie
+{
+ 	0% {transform: translate(400px, 0px);}
+	3% {transform: translate(400px, 0px);}
+	6% {transform: translate(0px, 0px);}
+	40% {transform: translate(0px, 0px);}
+	50% {transform: translate(-400px, 0px);}
+	100% {transform: translate(-400px, 0px);}
+}
+
+@-webkit-keyframes chartpie
+{
+ 	0% {-webkit-transform: translate(400px, 0px);}
+	3% {-webkit-transform: translate(400px, 0px);}
+	6% {-webkit-transform: translate(0px, 0px);}
+	40% {-webkit-transform: translate(0px, 0px);}
+	50% {-webkit-transform: translate(-400px, 0px);}	
+	100% {-webkit-transform: translate(-400px, 0px);}
+}
+
+/*--------------------- Graph Chart -----------------------*/
+#graphchart {
+	animation-name:chartgraph; -webkit-animation-name:chartgraph;
+	animation-duration: 10s; -webkit-animation-duration: 10s;
+	animation-timing-function: ease; -webkit-animation-timing-function: ease;
+	animation-iteration-count: 1; -webkit-animation-iteration-count: 1;	
+	animation-direction: normal; -webkit-animation-direction: normal;
+	animation-delay: 14s; -webkit-animation-delay:14s;
+	animation-play-state: running; -webkit-animation-play-state: running;
+	animation-fill-mode: forwards; -webkit-animation-fill-mode: forwards;	
+}
+
+@keyframes chartgraph
+{
+ 	0% {transform: translate(0px, 0px);}
+	3% {transform: translate(0px, 0px);}
+	6% {transform: translate(0px, 0px);}
+	40% {transform: translate(0px, 0px);}
+	50% {transform: translate(0px, -360px);}
+	70% {transform:translate(0px, -360px); opacity:1;}
+	75% {transform:translate(90px, -320px) skew(0deg, 12deg) scale(0.9, 0.9); opacity:0.9;}
+	100% {transform: translate(90px, -320px) skew(0deg, 12deg) scale(0.9, 0.9); opacity:0.9;}
+}
+
+@-webkit-keyframes chartgraph
+{
+ 	0% {-webkit-transform: translate(0px, 0px);}
+	3% {-webkit-transform: translate(0px, 0px);}
+	6% {-webkit-transform: translate(0px, 0px);}
+	40% {-webkit-transform: translate(0px, 0px);}
+	50% {-webkit-transform: translate(0px, -360px);}
+	70% {-webkit-transform: translate(0px, -360px);}
+	75% {-webkit-transform: translate(90px, -320px) skew(0deg, 12deg) scale(0.9, 0.9); opacity:0.9;}	
+	100% {-webkit-transform: translate(90px, -320px) skew(0deg, 12deg) scale(0.9, 0.9); opacity:0.9;}
+}
+
+/*---------------Side Menu ----------------*/
+#sidemenu {
+	animation-name:menuside; -webkit-animation-name:menuside;
+	animation-duration: 10s; -webkit-animation-duration: 10s;
+	animation-timing-function: ease; -webkit-animation-timing-function: ease;
+	animation-iteration-count: 1; -webkit-animation-iteration-count: 1;	
+	animation-direction: normal; -webkit-animation-direction: normal;
+	animation-delay: 14s; -webkit-animation-delay:14s;
+	animation-play-state: running; -webkit-animation-play-state: running;
+	animation-fill-mode: forwards; -webkit-animation-fill-mode: forwards;	
+}
+
+@keyframes menuside
+{
+ 	0% {transform: translate(-200px, 0px);}
+	3% {transform: translate(-200px, 0px);}
+	6% {transform: translate(-200px, 0px);}
+	40% {transform: translate(-200px, 0px);}
+	50% {transform: translate(-200px, 0px);}
+	70% {transform: translate(-200px, 0px);}
+	75% {transform: translate(0px, 0px);}
+	100% {transform: translate(0px, 0px);}
+}
+
+@-webkit-keyframes menuside
+{
+ 	0% {-webkit-transform: translate(-200px, 0px);}
+	3% {-webkit-transform: translate(-200px, 0px);}
+	6% {-webkit-transform: translate(-200px, 0px);}
+	40% {-webkit-transform: translate(-200px, 0px);}
+	50% {-webkit-transform: translate(-200px, 0px);}
+	70% {-webkit-transform: translate(-200px, 0px);}
+	75% {-webkit-transform: translate(0px, 0px);}
+	100% {-webkit-transform: translate(0px, 0px);}
+}
+
+/*-------------------- menu box move -----------------------*/
+#sidemenumove {
+	animation-name:menumoveside; -webkit-animation-name:menumoveside;
+	animation-duration: 8s; -webkit-animation-duration: 8s;
+	animation-timing-function: ease; -webkit-animation-timing-function: ease;
+	animation-iteration-count: 1; -webkit-animation-iteration-count: 1;	
+	animation-direction: normal; -webkit-animation-direction: normal;
+	animation-delay: 21s; -webkit-animation-delay:21s;
+	animation-play-state: running; -webkit-animation-play-state: running;
+	animation-fill-mode: forwards; -webkit-animation-fill-mode: forwards;	
+}
+
+@keyframes menumoveside
+{
+ 	0%   {transform: translate(0px, 0px);}
+	10%  {transform: translate(0px, 0px);}
+	13%  {transform: translate(0px, 50px);}
+	23%  {transform: translate(0px, 50px);}
+	26%  {transform: translate(0px, 100px);}
+	36%  {transform: translate(0px, 100px);}
+	39%  {transform: translate(0px, 150px);}
+	49%  {transform: translate(0px, 150px);  opacity:0.6;}
+	51%  {transform: translate(0px, 150px);  opacity:1;}
+	100% {transform: translate(0px, 150px); opacity:1;}
+}
+
+@-webkit-keyframes menumoveside
+{
+ 	0%   {-webkit-transform: translate(0px, 0px);}
+	10%  {-webkit-transform: translate(0px, 0px);}
+	13%  {-webkit-transform: translate(0px, 50px);}
+	23%  {-webkit-transform: translate(0px, 50px);}
+	26%  {-webkit-transform: translate(0px, 100px);}
+	36%  {-webkit-transform: translate(0px, 100px);}
+	39%  {-webkit-transform: translate(0px, 150px);}
+	49%  {-webkit-transform: translate(0px, 150px);  opacity:0.6;}
+	51%  {-webkit-transform: translate(0px, 150px);  opacity:1;}
+	100% {-webkit-transform: translate(0px, 150px); opacity:1;}
+}
+
+
+/*****************===========================for screen one ============================ *****************/
+/*=================Phone out line animation =================*/
+.phoneline {
+ stroke-dasharray: 1000; -webkit-stroke-dasharray: 1000;
+ stroke-dashoffset: 1000; -webkit-stroke-dashoffset: 1000;
+				animation-name:poutline; -webkit-animation-name:poutline;
+				animation-duration: 120s; -webkit-animation-duration: 120s;
+				animation-timing-function: ease; -webkit-animation-timing-function: ease;
+				animation-iteration-count: 1; -webkit-animation-iteration-count: 1;	
+				animation-direction: alternate; -webkit-animation-direction: alternate;
+				animation-delay: 1s; -webkit-animation-delay:1s;
+				animation-play-state: running; -webkit-animation-play-state: running;
+				animation-fill-mode: forwards; -webkit-animation-fill-mode: forwards; 
+ /*animation: poutlinet 5s linear alternate forwards; -webkit-animation: poutlinet 5s linear alternate forwards;*/
+}
+
+@keyframes poutline
+{
+	0% {stroke-dashoffset: 1000;}
+	2% { stroke-dashoffset: 1000;}
+	4% {stroke-dashoffset: 1000;}
+	4.5%{ stroke-dashoffset: 1000;}
+	5.5%{stroke-dashoffset: 1000;}
+	6%{ stroke-dashoffset: 1000;}
+	6.5%{stroke-dashoffset: 1000;}
+	6.8%{stroke-dashoffset: 1000;}
+	10%{stroke-dashoffset: 1000;}
+	20%{stroke-dashoffset: 1000;}
+	21%{stroke-dashoffset: 1000;}
+	21.6%{stroke-dashoffset:1000;}
+	23%{stroke-dashoffset:1000;}
+	30%{stroke-dashoffset:0;}
+	38%{stroke-dashoffset:0;}
+	42%{stroke-dashoffset:1000;}
+	100%{stroke-dashoffset: 1000;}
+}
+
+@-webkit-keyframes poutline /*Safari and Chrome*/
+{
+	0% {stroke-dashoffset: 1000;}
+	2% { stroke-dashoffset: 1000;}
+	4% {stroke-dashoffset: 1000;}
+	4.5%{ stroke-dashoffset: 1000;}
+	5.5%{stroke-dashoffset: 1000;}
+	6%{ stroke-dashoffset: 1000;}
+	6.5%{stroke-dashoffset: 1000;}
+	6.8%{stroke-dashoffset: 1000;}
+	10%{stroke-dashoffset: 1000;}
+	20%{stroke-dashoffset: 1000;}
+	21%{stroke-dashoffset: 1000;}
+	21.6%{stroke-dashoffset:1000;}
+	23%{stroke-dashoffset:1000;}
+	30%{stroke-dashoffset:0;}
+	38%{stroke-dashoffset:0;}
+	42%{stroke-dashoffset:1000;}
+	100%{stroke-dashoffset: 1000;}
+}
+
+
+
+.phoneline2 {
+ stroke-dasharray: 1000; -webkit-stroke-dasharray: 1000;
+ stroke-dashoffset: 1000; -webkit-stroke-dashoffset: 1000;
+				animation-name:poutlinet; -webkit-animation-name:poutlinet;
+				animation-duration: 120s; -webkit-animation-duration: 120s;
+				animation-timing-function: ease; -webkit-animation-timing-function: ease;
+				animation-iteration-count: 1; -webkit-animation-iteration-count: 1;	
+				animation-direction: alternate; -webkit-animation-direction: alternate;
+				animation-delay: 1s; -webkit-animation-delay:1s;
+				animation-play-state: running; -webkit-animation-play-state: running;
+				animation-fill-mode: forwards; -webkit-animation-fill-mode: forwards; 
+ /*animation: poutlinet 5s linear alternate forwards; -webkit-animation: poutlinet 5s linear alternate forwards;*/
+}
+
+@keyframes poutlinet
+{
+	0% {stroke-dashoffset: 1000;}
+	2% { stroke-dashoffset: 1000;}
+	4% {stroke-dashoffset: 1000;}
+	4.5%{ stroke-dashoffset: 1000;}
+	5.5%{stroke-dashoffset: 1000;}
+	6%{ stroke-dashoffset: 1000;}
+	6.5%{stroke-dashoffset: 1000;}
+	6.8%{stroke-dashoffset: 1000;}
+	10%{stroke-dashoffset: 1000;}
+	20%{stroke-dashoffset: 1000;}
+	21%{stroke-dashoffset: 1000;}
+	21.6%{stroke-dashoffset:1000;}
+	22%{stroke-dashoffset:1000;}
+	28%{stroke-dashoffset:0;}
+	38%{stroke-dashoffset:0;}
+	42%{stroke-dashoffset:1000;}
+	100%{stroke-dashoffset: 1000;}
+}
+
+@-webkit-keyframes poutlinet /*Safari and Chrome*/
+{
+	0% {stroke-dashoffset: 1000;}
+	2% { stroke-dashoffset: 1000;}
+	4% {stroke-dashoffset: 1000;}
+	4.5%{ stroke-dashoffset: 1000;}
+	5.5%{stroke-dashoffset: 1000;}
+	6%{ stroke-dashoffset: 1000;}
+	6.5%{stroke-dashoffset: 1000;}
+	6.8%{stroke-dashoffset: 1000;}
+	10%{stroke-dashoffset: 1000;}
+	20%{stroke-dashoffset: 1000;}
+	21%{stroke-dashoffset: 1000;}
+	21.6%{stroke-dashoffset:1000;}
+	22%{stroke-dashoffset:1000;}
+	28%{stroke-dashoffset:0;}
+	38%{stroke-dashoffset:0;}
+	42%{stroke-dashoffset:1000;}
+	100%{stroke-dashoffset: 1000;}
+}
+
+/*report screen bg animation*/
+.report-bg {animation-name:reportbg; -webkit-animation-name:reportbg;
+			animation-duration: 120s; -webkit-animation-duration: 120s;
+			animation-timing-function: ease; -webkit-animation-timing-function: ease;
+			animation-iteration-count: 1; -webkit-animation-iteration-count: 1;	
+			animation-direction: alternate; -webkit-animation-direction: alternate;
+			animation-delay: 1s; -webkit-animation-delay:1s;
+			animation-play-state: running; -webkit-animation-play-state: running;
+			animation-fill-mode: forwards; -webkit-animation-fill-mode: forwards; 
+}
+
+@keyframes reportbg {
+	0% {transform: translate(0%, -100%);}
+	25%{transform: translate(0%, -100%);}
+	26%{transform: translate(0%, 0%);}
+	100%{transform: translate(0%, 0%);}
+}
+@-webkit-keyframes reportbg {
+	0% {-webkit-transform: translate(0%, -100%);}
+	25%{-webkit-transform: translate(0%, -100%);}
+	26%{-webkit-transform: translate(0%, 0%);}
+	100%{-webkit-transform: translate(0%, 0%);}
+}
+
+/*==========----------- first report graph ----------==========*/
+.freport {
+		animation-name:freportbox; -webkit-animation-name:freportbox;
+		animation-duration: 120s; -webkit-animation-duration: 120s;
+		animation-timing-function: ease; -webkit-animation-timing-function: ease;
+		animation-iteration-count: 1; -webkit-animation-iteration-count: 1;	
+		animation-direction: alternate; -webkit-animation-direction: alternate;
+		animation-delay: 1s; -webkit-animation-delay:1s;
+		animation-play-state: running; -webkit-animation-play-state: running;
+		animation-fill-mode: forwards; -webkit-animation-fill-mode: forwards; 
+}
+@keyframes freportbox
+{
+	0% {opacity:0;}
+	26%{opacity:0;}
+	26.3%{opacity:0.8; }
+	29% {opacity:0.8; }
+	33% {opacity:0.8; }
+	100%{opacity:0.8; }
+}
+
+@-webkit-keyframes freportbox /*Safari and Chrome*/
+{
+	0% {opacity:0;}
+	26%{opacity:0;}
+	26.3%{opacity:0.8;}
+	100%{opacity:0.8; }
+}
+/*===========Perspective============*/
+.per {
+		animation-name:pers; -webkit-animation-name:pers;
+		animation-duration: 120s; -webkit-animation-duration: 120s;
+		animation-timing-function: ease; -webkit-animation-timing-function: ease;
+		animation-iteration-count: 1; -webkit-animation-iteration-count: 1;	
+		animation-direction: alternate; -webkit-animation-direction: alternate;
+		animation-delay: 1s; -webkit-animation-delay:1s;
+		animation-play-state: running; -webkit-animation-play-state: running;
+		animation-fill-mode: forwards; -webkit-animation-fill-mode: forwards; 	
+}
+@keyframes pers
+{
+	0% { transform: rotateY(0deg); }
+	26%{transform: rotateY(0deg);}
+	26.8%{transform: rotateY(0deg); }
+	29%{transform: rotateY(5deg);}
+	35%{transform: rotateY(5deg);}
+	36%{transform: rotateY(0deg); width:450px;}
+	36.4%{transform: rotateY(0deg); width:450px;}
+	37%{transform: rotateY(0deg); width:188px;}
+	100%{transform: rotateY(0deg); width:188px;}
+}
+
+@-webkit-keyframes pers /*Safari and Chrome*/
+{
+	0% {-webkit-transform: rotateY(0deg);}
+	26%{-webkit-transform: rotateY(0deg);}
+	26.8%{-webkit-transform: rotateY(0deg);}
+	29% {-webkit-transform: rotateY(5deg);}
+	35%{-webkit-transform: rotateY(5deg);}
+	36%{-webkit-transform: rotateY(0deg); width:450px;}
+	36.4%{-webkit-transform: rotateY(0deg); width:450px;}
+	37%{-webkit-transform: rotateY(0deg); width:188px;}
+	100%{-webkit-transform: rotateY(0deg); width:188px;}
+}
+
+
+
+/*========== report line ==================*/
+
+.all-report {
+ stroke-dasharray: 1000; -webkit-stroke-dasharray: 1000;
+ stroke-dashoffset: 1000; -webkit-stroke-dashoffset: 1000;
+				animation-name:roneline; -webkit-animation-name:roneline;
+				animation-duration: 120s; -webkit-animation-duration: 120s;
+				animation-timing-function: ease; -webkit-animation-timing-function: ease;
+				animation-iteration-count: 1; -webkit-animation-iteration-count: 1;	
+				animation-direction: alternate; -webkit-animation-direction: alternate;
+				animation-delay: 1s; -webkit-animation-delay:1s;
+				animation-play-state: running; -webkit-animation-play-state: running;
+				animation-fill-mode: forwards; -webkit-animation-fill-mode: forwards; 	
+}
+
+@keyframes roneline
+{
+	0% {stroke-dashoffset: 1000;}
+	27%{stroke-dashoffset:1000;}
+	32%{stroke-dashoffset:0;}
+	36.4%{stroke-dashoffset:0; transform:scale(1) translate(0px, 0px);}
+	37%{stroke-dashoffset:0; transform:scale(0.5) translate(-100px, 100px);}
+	100%{stroke-dashoffset: 0; transform:scale(0.5) translate(-100px, 100px);}
+}
+
+@-webkit-keyframes roneline /*Safari and Chrome*/
+{
+	0% {stroke-dashoffset: 1000;}
+	27%{stroke-dashoffset:1000;}
+	32%{stroke-dashoffset:0;}
+	36.4%{stroke-dashoffset:0; -webkit-transform:scale(1) translate(0px, 0px);}
+	37%{stroke-dashoffset:0; -webkit-transform:scale(0.5) translate(-100px, 100px);}
+	100%{stroke-dashoffset: 0; -webkit-transform:scale(0.5) translate(-100px, 100px);}
+}
+
+/*.report-two-line {
+ stroke-dasharray: 1000; -webkit-stroke-dasharray: 1000;
+ stroke-dashoffset: 1000; -webkit-stroke-dashoffset: 1000;
+				animation-name:rtwoline; -webkit-animation-name:rtwoline;
+				animation-duration: 120s; -webkit-animation-duration: 120s;
+				animation-timing-function: ease; -webkit-animation-timing-function: ease;
+				animation-iteration-count: 1; -webkit-animation-iteration-count: 1;	
+				animation-direction: alternate; -webkit-animation-direction: alternate;
+				animation-delay: 1s; -webkit-animation-delay:1s;
+				animation-play-state: running; -webkit-animation-play-state: running;
+				animation-fill-mode: forwards; -webkit-animation-fill-mode: forwards; 	
+}
+
+@keyframes rtwoline
+{
+	0% {stroke-dashoffset: 1000;}
+	27%{stroke-dashoffset:1000;}
+	32%{stroke-dashoffset:0;}
+	36.4%{stroke-dashoffset:0; transform:scale(1) translate(0px, 0px);}
+	37%{stroke-dashoffset:0; transform:scale(0.5) translate(-100px, 100px);}
+	100%{stroke-dashoffset: 0; transform:scale(0.5) translate(-100px, 100px);}
+}
+
+@-webkit-keyframes rtwoline 
+{
+	0% {stroke-dashoffset: 1000;}
+	27%{stroke-dashoffset:1000;}
+	32%{stroke-dashoffset:0;}
+	36.4%{stroke-dashoffset:0; -webkit-transform:scale(1) translate(0px, 0px);}
+	37%{stroke-dashoffset:0; -webkit-transform:scale(0.5) translate(-100px, 100px);}
+	100%{stroke-dashoffset: 0; -webkit-transform:scale(0.5) translate(-100px, 100px);}
+}*/
+
+/*report graph circles open*/
+.rplo {
+		animation-name:rgcone; -webkit-animation-name:rgcone;
+		animation-duration: 120s; -webkit-animation-duration: 120s;
+		animation-timing-function: ease; -webkit-animation-timing-function: ease;
+		animation-iteration-count: 1; -webkit-animation-iteration-count: 1;	
+		animation-direction: alternate; -webkit-animation-direction: alternate;
+		animation-delay: 1s; -webkit-animation-delay:1s;
+		animation-play-state: running; -webkit-animation-play-state: running;
+		animation-fill-mode: forwards; -webkit-animation-fill-mode: forwards; 	
+	}
+@keyframes rgcone
+{
+	0% {opacity:0;}
+	26.6%{opacity:0;}
+	26.8%{opacity:1;}
+	100%{opacity:1;}
+}
+
+@-webkit-keyframes rgcone /*Safari and Chrome*/
+{
+	0% {opacity:0;}
+	26.6%{opacity:0;}
+	26.8%{opacity:1;}
+	100%{opacity:1;}
+}
+/*circle two*/
+.rplt {
+		animation-name:rgctwo; -webkit-animation-name:rgctwo;
+		animation-duration: 120s; -webkit-animation-duration: 120s;
+		animation-timing-function: ease; -webkit-animation-timing-function: ease;
+		animation-iteration-count: 1; -webkit-animation-iteration-count: 1;	
+		animation-direction: alternate; -webkit-animation-direction: alternate;
+		animation-delay: 1s; -webkit-animation-delay:1s;
+		animation-play-state: running; -webkit-animation-play-state: running;
+		animation-fill-mode: forwards; -webkit-animation-fill-mode: forwards; 	
+	}
+@keyframes rgctwo
+{
+	0% {opacity:0;}
+	26.8%{opacity:0;}
+	27%{opacity:1;}
+	100%{opacity:1;}
+}
+
+@-webkit-keyframes rgctwo /*Safari and Chrome*/
+{
+	0% {opacity:0;}
+	26.8%{opacity:0;}
+	27%{opacity:1;}
+	100%{opacity:1;}
+}
+/*third point*/
+.rplth {
+		animation-name:rgcthree; -webkit-animation-name:rgcthree;
+		animation-duration: 120s; -webkit-animation-duration: 120s;
+		animation-timing-function: ease; -webkit-animation-timing-function: ease;
+		animation-iteration-count: 1; -webkit-animation-iteration-count: 1;	
+		animation-direction: alternate; -webkit-animation-direction: alternate;
+		animation-delay: 1s; -webkit-animation-delay:1s;
+		animation-play-state: running; -webkit-animation-play-state: running;
+		animation-fill-mode: forwards; -webkit-animation-fill-mode: forwards; 	
+	}
+@keyframes rgcthree
+{
+	0% {opacity:0;}
+	27%{opacity:0;}
+	27.2%{opacity:1;}
+	100%{opacity:1;}
+}
+
+@-webkit-keyframes rgcthree /*Safari and Chrome*/
+{
+	0% {opacity:0;}
+	27%{opacity:0;}
+	27.2%{opacity:1;}
+	100%{opacity:1;}
+}
+/*fourth point*/
+.rplf {
+		animation-name:rgctfour; -webkit-animation-name:rgctfour;
+		animation-duration: 120s; -webkit-animation-duration: 120s;
+		animation-timing-function: ease; -webkit-animation-timing-function: ease;
+		animation-iteration-count: 1; -webkit-animation-iteration-count: 1;	
+		animation-direction: alternate; -webkit-animation-direction: alternate;
+		animation-delay: 1s; -webkit-animation-delay:1s;
+		animation-play-state: running; -webkit-animation-play-state: running;
+		animation-fill-mode: forwards; -webkit-animation-fill-mode: forwards; 	
+	}
+@keyframes rgctfour
+{
+	0% {opacity:0;}
+	27.2%{opacity:0;}
+	27.4%{opacity:1;}
+	100%{opacity:1;}
+}
+
+@-webkit-keyframes rgctfour /*Safari and Chrome*/
+{
+	0% {opacity:0;}
+	27.2%{opacity:0;}
+	27.4%{opacity:1;}
+	100%{opacity:1;}
+}
+/*fifth point*/
+.rplfi {
+		animation-name:rgctfive; -webkit-animation-name:rgctfive;
+		animation-duration: 120s; -webkit-animation-duration: 120s;
+		animation-timing-function: ease; -webkit-animation-timing-function: ease;
+		animation-iteration-count: 1; -webkit-animation-iteration-count: 1;	
+		animation-direction: alternate; -webkit-animation-direction: alternate;
+		animation-delay: 1s; -webkit-animation-delay:1s;
+		animation-play-state: running; -webkit-animation-play-state: running;
+		animation-fill-mode: forwards; -webkit-animation-fill-mode: forwards; 	
+	}
+@keyframes rgctfive
+{
+	0% {opacity:0;}
+	27.4%{opacity:0;}
+	27.6%{opacity:1;}
+	100%{opacity:1;}
+}
+
+@-webkit-keyframes rgctfive /*Safari and Chrome*/
+{
+	0% {opacity:0;}
+	27.4%{opacity:0;}
+	27.6%{opacity:1;}
+	100%{opacity:1;}
+}
+
+.rpls {
+		animation-name:rgcsix; -webkit-animation-name:rgcsix;
+		animation-duration: 120s; -webkit-animation-duration: 120s;
+		animation-timing-function: ease; -webkit-animation-timing-function: ease;
+		animation-iteration-count: 1; -webkit-animation-iteration-count: 1;	
+		animation-direction: alternate; -webkit-animation-direction: alternate;
+		animation-delay: 1s; -webkit-animation-delay:1s;
+		animation-play-state: running; -webkit-animation-play-state: running;
+		animation-fill-mode: forwards; -webkit-animation-fill-mode: forwards; 	
+	}
+@keyframes rgcsix
+{
+	0% {opacity:0;}
+	27.4%{opacity:0;}
+	27.6%{opacity:1;}
+	100%{opacity:1;}
+}
+
+@-webkit-keyframes rgcsix /*Safari and Chrome*/
+{
+	0% {opacity:0;}
+	27.4%{opacity:0;}
+	27.6%{opacity:1;}
+	100%{opacity:1;}
+}
+
+/*report tab menu box*/
+.reporttabmenubox {
+		animation-name:rtmb; -webkit-animation-name:rtmb;
+		animation-duration: 120s; -webkit-animation-duration: 120s;
+		animation-timing-function: ease; -webkit-animation-timing-function: ease;
+		animation-iteration-count: 1; -webkit-animation-iteration-count: 1;	
+		animation-direction: alternate; -webkit-animation-direction: alternate;
+		animation-delay: 1s; -webkit-animation-delay:1s;
+		animation-play-state: running; -webkit-animation-play-state: running;
+		animation-fill-mode: forwards; -webkit-animation-fill-mode: forwards;	
+}
+@keyframes rtmb
+{
+	0% {opacity:0;}
+	30%{opacity:0;}
+	30.4%{opacity:1;}
+	100%{opacity:1;}
+}
+
+@-webkit-keyframes rtmb /*Safari and Chrome*/
+{
+	0% {opacity:0;}
+	30%{opacity:0;}
+	30.4%{opacity:1;}
+	100%{opacity:1;}
+}
+
+/*====== tab menus ======*/
+.rtabmenu_one {
+		animation-name:rtmbone; -webkit-animation-name:rtmbone;
+		animation-duration: 120s; -webkit-animation-duration: 120s;
+		animation-timing-function: ease; -webkit-animation-timing-function: ease;
+		animation-iteration-count: 1; -webkit-animation-iteration-count: 1;	
+		animation-direction: alternate; -webkit-animation-direction: alternate;
+		animation-delay: 1s; -webkit-animation-delay:1s;
+		animation-play-state: running; -webkit-animation-play-state: running;
+		animation-fill-mode: forwards; -webkit-animation-fill-mode: forwards;	
+}
+
+@keyframes rtmbone
+{
+	0% {transform: translate(0px, 150px) scale(1, 0.5);}
+	30.6%{transform: translate(0px, 150px) scale(1, 0.5);}
+	31% {transform: translate(0px, 0px) scale(1, 1);}
+	31.4% {transform: translate(0px, 150px) scale(1, 0.5);}
+	36.4% {transform: translate(0px, 150px) scale(1, 0.5);}
+	37% {transform: translate(0px, 150px) scale(1, 0.5);}
+	100%{transform: translate(0px, 150px) scale(1, 0.5);}
+}
+
+@-webkit-keyframes rtmbone /*Safari and Chrome*/
+{
+	0% {-webkit-transform: translate(0px, 150px) scale(1, 0.5);}
+	30.6%{-webkit-transform: translate(0px, 150px) scale(1, 0.5);}
+	31%{-webkit-transform: translate(0px, 0px) scale(1, 1);}
+	31.4%{-webkit-transform: translate(0px, 150px) scale(1, 0.5);}
+	36.4% {-webkit-transform: translate(0px, 150px) scale(1, 0.5);}
+	37% {-webkit-transform: translate(0px, 150px) scale(1, 0.5);}
+	100%{-webkit-transform: translate(0px, 150px) scale(1, 0.5);}
+}
+
+/*two*/
+.rtabmenu_two {
+		animation-name:rtmbtwo; -webkit-animation-name:rtmbtwo;
+		animation-duration: 120s; -webkit-animation-duration: 120s;
+		animation-timing-function: ease; -webkit-animation-timing-function: ease;
+		animation-iteration-count: 1; -webkit-animation-iteration-count: 1;	
+		animation-direction: alternate; -webkit-animation-direction: alternate;
+		animation-delay: 1s; -webkit-animation-delay:1s;
+		animation-play-state: running; -webkit-animation-play-state: running;
+		animation-fill-mode: forwards; -webkit-animation-fill-mode: forwards;	
+}
+
+@keyframes rtmbtwo
+{
+	0% {transform: translate(90px, 150px) scale(1, 0.5);}
+	31%{transform: translate(90px, 150px) scale(1, 0.5);}
+	31.4%{transform: translate(90px, 0px) scale(1, 1);}
+	31.8%{transform: translate(90px, 150px) scale(1, 0.5);}
+	36.4%{transform: translate(90px, 150px) scale(1, 0.5);}
+	37%{transform: translate(42px, 150px) scale(1, 0.5);}
+	100%{transform: translate(42px, 150px) scale(1, 0.5);}
+}
+
+@-webkit-keyframes rtmbtwo /*Safari and Chrome*/
+{
+	0% {-webkit-transform: translate(90px, 150px) scale(1, 0.5);}
+	31%{-webkit-transform: translate(90px, 150px) scale(1, 0.5);}
+	31.4%{-webkit-transform: translate(90px, 0px) scale(1, 1);}
+	31.8%{-webkit-transform: translate(90px, 150px) scale(1, 0.5);}
+	36.4%{-webkit-transform: translate(90px, 150px) scale(1, 0.5);}
+	37%{-webkit-transform: translate(42px, 150px) scale(1, 0.5);}
+	100%{-webkit-transform: translate(42px, 150px) scale(1, 0.5);}
+}
+
+/*three*/
+.rtabmenu_three {
+		animation-name:rtmbthree; -webkit-animation-name:rtmbthree;
+		animation-duration: 120s; -webkit-animation-duration: 120s;
+		animation-timing-function: ease; -webkit-animation-timing-function: ease;
+		animation-iteration-count: 1; -webkit-animation-iteration-count: 1;	
+		animation-direction: alternate; -webkit-animation-direction: alternate;
+		animation-delay: 1s; -webkit-animation-delay:1s;
+		animation-play-state: running; -webkit-animation-play-state: running;
+		animation-fill-mode: forwards; -webkit-animation-fill-mode: forwards;	
+}
+
+@keyframes rtmbthree
+{
+	0% {transform: translate(180px, 150px) scale(1, 0.5);}
+	31.4%{transform: translate(180px, 150px) scale(1, 0.5);}
+	31.8%{transform: translate(180px, 0px) scale(1, 1);}
+	32.2%{transform: translate(180px, 150px) scale(1, 0.5);}
+	36.4%{transform: translate(180px, 150px) scale(1, 0.5);}
+	37%{transform: translate(84px, 150px) scale(1, 0.5);}
+	100%{transform: translate(84px, 150px) scale(1, 0.5);}
+}
+
+@-webkit-keyframes rtmbthree /*Safari and Chrome*/
+{
+	0% {-webkit-transform: translate(180px, 150px) scale(1, 0.5);}
+	31.4%{-webkit-transform: translate(180px, 150px) scale(1, 0.5);}
+	31.8%{-webkit-transform: translate(180px, 0px) scale(1, 1);}
+	32.2%{-webkit-transform: translate(180px, 150px) scale(1, 0.5);}
+	36.4%{-webkit-transform: translate(180px, 150px) scale(1, 0.5);}
+	37%{-webkit-transform: translate(84px, 150px) scale(1, 0.5);}	
+	100%{-webkit-transform: translate(84px, 150px) scale(1, 0.5);}
+}
+
+/*four*/
+.rtabmenu_four {
+		animation-name:rtmbfour; -webkit-animation-name:rtmbfour;
+		animation-duration: 120s; -webkit-animation-duration: 120s;
+		animation-timing-function: ease; -webkit-animation-timing-function: ease;
+		animation-iteration-count: 1; -webkit-animation-iteration-count: 1;	
+		animation-direction: alternate; -webkit-animation-direction: alternate;
+		animation-delay: 1s; -webkit-animation-delay:1s;
+		animation-play-state: running; -webkit-animation-play-state: running;
+		animation-fill-mode: forwards; -webkit-animation-fill-mode: forwards;	
+}
+
+@keyframes rtmbfour
+{
+	0% {transform: translate(270px, 150px) scale(1, 0.5);}
+	31.8%{transform: translate(270px, 150px) scale(1, 0.5);}
+	32.2%{transform: translate(270px, 0px) scale(1, 1);}
+	32.6%{transform: translate(270px, 150px) scale(1, 0.5);}
+	36.4%{transform: translate(270px, 150px) scale(1, 0.5);}
+	37%{transform: translate(126px, 150px) scale(1, 0.5);}
+	100%{transform: translate(126px, 150px) scale(1, 0.5);}
+}
+
+@-webkit-keyframes rtmbfour /*Safari and Chrome*/
+{
+	0% {-webkit-transform: translate(270px, 150px) scale(1, 0.5);}
+	31.8%{-webkit-transform: translate(270px, 150px) scale(1, 0.5);}
+	32.2%{-webkit-transform: translate(270px, 0px) scale(1, 1);}
+	32.6%{-webkit-transform: translate(270px, 150px) scale(1, 0.5);}
+	36.4%{-webkit-transform: translate(270px, 150px) scale(1, 0.5);}
+	37%{-webkit-transform: translate(126px, 150px) scale(1, 0.5);}
+	100%{-webkit-transform: translate(126px, 150px) scale(1, 0.5);}
+}
+
+/*----------------------- info texts -------------------------------*/
+.grinfoone {
+		animation-name:infrone; -webkit-animation-name:infrone;
+		animation-duration: 120s; -webkit-animation-duration: 120s;
+		animation-timing-function: ease; -webkit-animation-timing-function: ease;
+		animation-iteration-count: 1; -webkit-animation-iteration-count: 1;	
+		animation-direction: alternate; -webkit-animation-direction: alternate;
+		animation-delay: 1s; -webkit-animation-delay:1s;
+		animation-play-state: running; -webkit-animation-play-state: running;
+		animation-fill-mode: forwards; -webkit-animation-fill-mode: forwards; 	
+}
+@keyframes infrone
+{
+	0% { transform: translate(0px,0px); }
+	36.4%{transform: translate(0px,0px);}
+	37%{transform:translate(-34px,30px);}
+	100%{transform:translate(-34px,30px);}
+}
+
+@-webkit-keyframes infrone 
+{
+	0% {-webkit-transform: translate(0px,0px); }
+	36.4%{-webkit-transform: translate(0px,0px);}
+	37%{-webkit-transform:translate(-34px,30px);}
+	100%{-webkit-transform:translate(-34px,30px);}
+}
+
+.grinfotwo {
+		animation-name:infrtwo; -webkit-animation-name:infrtwo;
+		animation-duration: 120s; -webkit-animation-duration: 120s;
+		animation-timing-function: ease; -webkit-animation-timing-function: ease;
+		animation-iteration-count: 1; -webkit-animation-iteration-count: 1;	
+		animation-direction: alternate; -webkit-animation-direction: alternate;
+		animation-delay: 1s; -webkit-animation-delay:1s;
+		animation-play-state: running; -webkit-animation-play-state: running;
+		animation-fill-mode: forwards; -webkit-animation-fill-mode: forwards; 	
+}
+@keyframes infrtwo
+{
+	0% { transform: translate(0px,0px); }
+	36.4%{transform: translate(0px,0px);}
+	37%{transform:translate(-34px,30px);}
+	100%{transform:translate(-34px,30px);}
+}
+
+@-webkit-keyframes infrtwo 
+{
+	0% {-webkit-transform: translate(0px,0px); }
+	36.4%{-webkit-transform: translate(0px,0px);}
+	37%{-webkit-transform:translate(-34px,30px);}
+	100%{-webkit-transform:translate(-34px,30px);}
+}
+
+/*======================== Text animations ====================*/
+.re-text-ani {
+		animation-name:retextani; -webkit-animation-name:retextani;
+		animation-duration: 120s; -webkit-animation-duration: 120s;
+		animation-timing-function: ease; -webkit-animation-timing-function: ease;
+		animation-iteration-count: 1; -webkit-animation-iteration-count: 1;	
+		animation-direction: alternate; -webkit-animation-direction: alternate;
+		animation-delay: 0s; -webkit-animation-delay:0s;
+		animation-play-state: running; -webkit-animation-play-state: running;
+		animation-fill-mode: forwards; -webkit-animation-fill-mode: forwards;	
+}
+@keyframes retextani
+{
+	0% { transform: translate(0px,0px); opacity:0;}
+	43%{transform: translate(0px,0px); opacity:0;}
+	43.6%{transform:translate(50px,0px); opacity:0.8;}
+	100%{transform:translate(50px,0px); opacity:0.8;}
+}
+
+@-webkit-keyframes retextani 
+{
+	0% { -webkit-transform: translate(0px,0px); opacity:0;}
+	43%{-webkit-transform: translate(0px,0px); opacity:0;}
+	43.6%{-webkit-transform:translate(50px,0px); opacity:0.8;}
+	100%{-webkit-transform:translate(50px,0px); opacity:0.8;}
+}
+
+
+
+
+
